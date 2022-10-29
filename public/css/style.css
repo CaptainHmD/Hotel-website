@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+/* font-family: 'Roboto Mono', monospace; */
+:root {
+  --background-color: #e1d5c9;
+  --main-icon--background-color: #212325; /* you can merge between them if you want , i prefer to use it*/
+  --second-icon--background-color: #c49450; /* you can merge between them if you want  ** i prefer to not use it , perhaps the icon it self*/
+  --white-color: #ffffff; /* for icons , fonts and any small things */
+}
+body {
+  background-color: #212325;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+* {
+  box-sizing: border-box;
+}
+
+h1,h2,h3,a,p,span,svg{
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+/* .container {
+  display: flex;
+  flex-direction: column;
+} */
+
+nav {
+  display: flex;
+    width: 100%;
+    border: 3px solid red;
+    /* height: auto; */
+    
+}
+
+#logo {
+    width: 70px;
+
+}
+
+nav > .nav-section{
+    padding: 1rem  0.6rem ;
+    display: flex; /* to add gap between logo and website name*/
+    gap: 1rem;
+    border-left: 3px solid #c49450 ;
+    justify-content: center;
+    align-items: center;
+}
+#logo-section{
+    flex-basis: calc(100%/1.5);
+    justify-content: start;
+}
+#feedback-section{
+    flex-grow: 1;
+}
+#login-logout-section{
+    flex-grow: 1;
+}
+
