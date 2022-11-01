@@ -20,7 +20,7 @@ body {
   flex-direction: column;
   height: 100vh;
   margin: 0;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 * {
   box-sizing: border-box;
@@ -28,7 +28,7 @@ body {
   padding: 0;
 }
 
-h1,h2,h3,a,p,span,svg{
+h1,h2,h3,h4,h5,a,p,span,svg{
     font-family: 'Roboto Mono', monospace;
     font-weight: 400;
     color: white;
@@ -45,9 +45,13 @@ a{
 nav {
   display: flex;
     width: 100%;
-    border: 3px solid red;
+    border-bottom:solid 3px  black;
     /* height: auto; */
+    background-color: rgb(0, 0, 0,0.7);
     
+}
+#navbar{
+  position: absolute;
 }
 
 #logo {
@@ -68,13 +72,12 @@ nav > .nav-section{
     padding: 1rem  0.6rem ;
     display: flex; /* to add gap between logo and website name*/
     gap: 1rem;
-    border-left: 3px solid #c49450 ;
-    justify-content: center;
+    justify-content:space-around;
     align-items: center;
 }
 #logo-section{
     flex-basis: calc(100%/1.5);
-    justify-content: start;
+    justify-content: space-between;
 }
 #feedback-section{
     flex-grow: 1;
@@ -87,6 +90,63 @@ nav > .nav-section{
 }
 
 /* end nav */
+
+
+
+#img-full-fill{
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)),url('../resources/hotel-images/main1.jpg');
+  background-size:cover ;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: static;
+
+  display: block;
+}
+.title-text-section{
+  position: relative;
+  width: 40%;
+  height: 40%;
+  background-color: rgba(0,0,0,0.5);
+  border:rgba(0,0,0,0.8) solid 2px;
+  top: 30%;
+  left: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+}
+.title{
+
+}
+
+.info-text{
+  width: 85%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* end of main page view */
+
+
 
 main > article{
   display: flex;
@@ -110,6 +170,13 @@ main > article .article-section{
 } */
 
 
+.text-title{
+  font-weight: 600
+}
+#text-animation{
+  /* position: relative; */
+}
+
 
 #img-text-section{
   display: flex;
@@ -117,14 +184,67 @@ main > article .article-section{
   justify-content: space-evenly;
   align-items: center;
 }
-#img-section{
 
-  width: 50%;
-  height: 75%;
+#img-section{
+  position: relative;
+  width: 60%;
+  height: 80%;
   border: #c49450 solid 2px;
   display: flex;
   justify-content: center;
 }
+#next-arrow{
+  position: absolute;
+  right:  2%;
+  top: 50%;
+
+}
+
+#previous-arrow{
+position: absolute;
+  left: 2%;
+  top: 50%;
+}
+.bi-arrow{
+
+}
+
+#text-section{
+  display: flex;
+  justify-content: center;
+}
+
+
+#text-animation{
+  position: relative;
+}
+#text-animation::after{
+content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color:var(--background-color);
+  border-left: 3px solid rgb(109, 109, 240);
+  animation: typing 3s steps(12) infinite;
+
+}
+#text-animation::before{
+  content: attr(data-text);
+}
+
+
+@keyframes typing {
+  40%, 60%{
+    left:calc(100%); 
+   }   
+   100%{
+    left:0%;
+  }   
+}
+
+
 
 #img-section > img {
   width: 97%;
