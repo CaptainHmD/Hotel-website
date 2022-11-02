@@ -14,19 +14,28 @@
     <nav id="navbar">
         <div class="nav-section" id="logo-section">
             <div> <a href="#">
-                <img id="logo" src="../resources/icons/a6c89eb25f20c37a608f1cef9ca70d24.svg" alt="">
-            </a>
-            <a href="#">
-                <h1 class="nav-text">hotel</h1>
-            </a></div>
-           
-            <!-- must be list and reveal result on hover -->
-            <h2 class="nav-section nav-text" id="fast-travail">Fast Travail</h2>
+                    <img id="logo" src="../resources/icons/a6c89eb25f20c37a608f1cef9ca70d24.svg" alt="">
+                </a>
+                <a href="#">
+                    <h1 class="nav-text">hotel</h1>
+                </a>
+            </div>
 
+            <!-- must be list and reveal result on hover -->
+            <div class="dropdown">
+                <h2 class="nav-section nav-text" id="fast-travail">Fast Travel&nbsp;</h2>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-caret-down-fill" style="margin-top: 4px;white-space: nowrap;" viewBox="0 0 16 16" s>
+                    <path
+                        d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                </svg>
+            </div>
         </div>
         <div class="nav-section" id="feedback-section">
 
-            <a href=""><h2 class="nav-text">FeedBack</h2></a>
+            <a href="">
+                <h2 class="nav-text">FeedBack</h2>
+            </a>
         </div>
 
         <div class="nav-section" id="register-section">
@@ -35,48 +44,71 @@
             </h1>
         </div>
         <div class="nav-section" id="login-logout-section">
-            <a href=""><h2 class="nav-text">Login</h2></a>
+            <a href="">
+                <h2 class="nav-text">Login</h2>
+            </a>
         </div>
     </nav>
 
     <main>
 
         <article class="main-page-view">
-    <div id="img-full-fill">
+            <div id="img-full-fill">
 
-        <div class="title-text-section">
-                <div class="title">
-                    <h1>The Vacation Heaven</h1>
+                <div class="title-text-section">
+                    <div class="title">
+                        <h1>The Vacation Heaven</h1>
+                    </div>
+                    <h4 class="info-text">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, architecto laborum pariatur
+                        magni labore dolor nemo nesciunt omnis fuga ad!
+                    </h4>
                 </div>
-                <h4 class="info-text">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, architecto laborum pariatur magni labore dolor nemo nesciunt omnis fuga ad!
-                </h4>
-        </div>
 
 
-    </div>
+            </div>
         </article>
 
         <!-- <div class="article-section"></div> -->
-    <!-- after main view will be our services then the text animation and img swapping -->
+        <!-- after main view will be our services then the text animation and img swapping -->
+        <div class="article-section" id="our-services">
+
+            <div class="services-title">
+                <h2>Our Services</h2>
+            </div>
+            <div class="services-wrapper">
+                <div class="cards"></div>
+                <div class="cards"></div>
+                <div class="cards"></div>
+                <div class="cards"></div>
+                <div class="cards"></div>
+                <div class="cards"></div>
+            </div>
+
+        </div>
+
         <article>
             <div class="article-section" id="img-text-section">
 
                 <div id="text-section">
-                    <h1 class="text-title">find your best friend&nbsp;<span id="text-animation" data-text="hi im span"></span></h1>
+                    <h1 class="text-title">find your best friend&nbsp;<span id="text-animation"
+                            data-text="hi im span"></span></h1>
                 </div>
                 <div id="img-section">
-                    <div id="next-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="16%" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
-                        <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
-                      </svg></div>
-                    <div id="previous-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="16%" fill="currentColor" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
-                        <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
-                      </svg></div>
-                      <!-- <div class="img-info"></div> -->
+                    <div id="next-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="16%"
+                            fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
+                        </svg></div>
+                    <div id="previous-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="16%"
+                            fill="currentColor" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z" />
+                        </svg></div>
+                    <!-- <div class="img-info"></div> -->
                     <img src="../resources/hotel-images/hotel1.jpg" alt="" width="50">
                 </div>
             </div>
-            <div class="article-section"></div>
             <div class="article-section"></div>
             <!-- <div class="article-section"></div> -->
         </article>

@@ -1,26 +1,29 @@
 const textAnimation = document.querySelector('#text-animation');
 
 let textCounter = 0
-textAnimation.addEventListener('animationiteration', (event) => {
-    console.log('end of iteration');   
-    if(textCounter===0){
-        textAnimation.dataset.text="hi guys " 
-        textCounter++
-    }else if(textCounter===1){
-        textAnimation.dataset.text="im hamad" 
-        textCounter++
-
-    }else if(textCounter===2){
-        textAnimation.dataset.text="i like" 
-        textCounter++
-
-    }else if(textCounter===3){
-        textAnimation.dataset.text="nothing !!" 
-        textCounter++
-
-    }else if(textCounter===4){
-        textAnimation.dataset.text="end of e" 
-        textCounter=0
-
-    }
+const prettyPhrases = ['hi guys',"im hamad","i like","nothing !!","end of e"]
+textAnimation.addEventListener('animationiteration', () => {
+    if(prettyPhrases.length===textCounter)
+    textCounter=0
+    
+    textAnimation.dataset.text  = prettyPhrases[textCounter]
+    textCounter++
 });
+
+
+
+// When the user scrolls down 20px from the top of the document, slide down the navbar and change alpha to 1
+// When the user scrolls to the top of the page, slide up the navbar (default = 10%) and return alpha to 0.7
+
+window.onscroll = function() {scrollFunction()};
+const navbar = document.getElementById("navbar");
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("navbar").style.background = "black";
+    navbar.style.height="12%"
+  } else {
+    document.getElementById("navbar").style.background = "rgb(0, 0, 0, 0.7)";
+    navbar.style.height="10%"
+
+  }
+}

@@ -1,13 +1,15 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
 /* font-family: 'Roboto Mono', monospace; */
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
-/* font-family: 'Roboto Mono', monospace; */
+
 :root {
-  --background-color: rgb(6 11 25);
-  --main-icon--background-color: #212325; /* you can merge between them if you want , i prefer to use it*/
-  --second-icon--background-color: #c49450; /* you can merge between them if you want  ** i prefer to not use it , perhaps the icon it self*/
-  --white-color: #ffffff; /* for icons , fonts and any small things */
+  --background-color: rgb(20 20 20);
+  --main-icon-background-color: #212325;
+  /* you can merge between them if you want , i prefer to use it*/
+  --second-icon-background-color: #c49450;
+  /* you can merge between them if you want  ** i prefer to not use it , perhaps the icon it self*/
+  --white-color: #ffffff;
+  /* for icons , fonts and any small things */
 }
 
 /* common-screen-sizes-for-responsive-web-design*/
@@ -22,21 +24,33 @@ body {
   margin: 0;
   /* overflow: hidden; */
 }
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-h1,h2,h3,h4,h5,a,p,span,svg{
-    font-family: 'Roboto Mono', monospace;
-    font-weight: 400;
-    color: white;
-    display: flex;
+h1,
+h2,
+h3,
+h4,
+h5,
+a,
+p,
+span,
+svg {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+  color: white;
+  display: flex;
+  text-align: center;
 }
-a{
-    text-decoration: none;
+
+a {
+  text-decoration: none;
 }
+
 /* .container {
   display: flex;
   flex-direction: column;
@@ -44,72 +58,101 @@ a{
 
 nav {
   display: flex;
-    width: 100%;
-    border-bottom:solid 3px  black;
-    /* height: auto; */
-    background-color: rgb(0, 0, 0,0.7);
-    
+  width: 100%;
+  border-bottom: solid 3px var(--second-icon-background-color);
+  /* height: auto; */
+  height: 10%;
+  background-color: rgb(0, 0, 0, 0.7);
 }
-#navbar{
-  position: absolute;
+
+#navbar {
+  position: fixed;
+  z-index: 100;
+  transition: height 0.3s ease;
 }
 
 #logo {
-    width: 50px;
-
-}
-#register-text{
-  white-space:nowrap
-
+  width: 50px;
 }
 
-.nav-text{
+#register-text {
+  white-space: nowrap;
+}
+
+.nav-text {
   font-size: 1rem;
 }
 
+nav>.nav-section {
+  padding: 1rem 0.6rem;
+  display: flex;
+  /* to add gap between logo and website name*/
+  gap: 1rem;
+  justify-content: space-around;
+  align-items: center;
+}
 
-nav > .nav-section{
-    padding: 1rem  0.6rem ;
-    display: flex; /* to add gap between logo and website name*/
-    gap: 1rem;
-    justify-content:space-around;
-    align-items: center;
+#logo-section {
+  flex-basis: calc(100% / 1.5);
+  justify-content: space-between;
 }
-#logo-section{
-    flex-basis: calc(100%/1.5);
-    justify-content: space-between;
+
+#feedback-section {
+  flex-grow: 1;
 }
-#feedback-section{
-    flex-grow: 1;
+
+#login-logout-section {
+  flex-grow: 1;
 }
-#login-logout-section{
-    flex-grow: 1;
+
+#register-section {
+  flex-grow: 1;
 }
-#register-section{
-    flex-grow: 1;
+
+#logo-section>.dropdown {
+  /* background-color: red; */
+  padding: 8px;
+  border-radius: 3rem;
+  border: solid 3px var(--second-icon-background-color);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown:hover {
+  cursor: pointer;
+  background-color: var(--second-icon-background-color);
+}
+
+h2 {
+  white-space: nowrap !important;
 }
 
 /* end nav */
 
 
 
-#img-full-fill{
+
+
+#img-full-fill {
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)),url('../resources/hotel-images/main1.jpg');
-  background-size:cover ;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)),
+    url("../resources/hotel-images/main1.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   position: static;
-
   display: block;
 }
-.title-text-section{
+
+.title-text-section {
   position: relative;
   width: 40%;
-  height: 40%;
-  background-color: rgba(0,0,0,0.5);
-  border:rgba(0,0,0,0.8) solid 2px;
+  height: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: var(--second-icon-background-color) solid 2px;
   top: 30%;
   left: 30%;
   display: flex;
@@ -118,46 +161,64 @@ nav > .nav-section{
   align-items: center;
   gap: 10%;
 }
-.title{
 
-}
+.title {}
 
-.info-text{
+.info-text {
   width: 85%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* end of main page view */
 
 
-
-main > article{
+#our-services{
+  width: 100%;
+  height: 90vh;
   display: flex;
-  height:  90vh;
+  flex-direction:column ;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+.services-wrapper{
+  width: 70%;
+  height: 70%;
+  display: grid;
+  grid-template-columns: repeat(3,2fr);
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+.cards{
+  width: 90%;
+  height: 80%;
+  border:var(--second-icon-background-color) solid 2px;
+  align-self: auto;
+  justify-self: center;
+  border-radius: 10px;
+  background-color: var(--main-icon-background-color);
+}
+
+
+
+
+
+
+
+
+/* end of our-services */
+main>article {
+  display: flex;
+  height: 90vh;
   flex-direction: column;
   /* overflow: auto ; */
 }
 
-main > article .article-section{
-
-  border:  2px solid red;
+main>article .article-section {
+  border: 2px solid red;
   flex-grow: 1;
 }
 
@@ -169,23 +230,22 @@ main > article .article-section{
   flex-grow: 2;
 } */
 
-
-.text-title{
-  font-weight: 600
+.text-title {
+  font-weight: 600;
 }
-#text-animation{
+
+#text-animation {
   /* position: relative; */
 }
 
-
-#img-text-section{
+#img-text-section {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
 }
 
-#img-section{
+#img-section {
   position: relative;
   width: 60%;
   height: 80%;
@@ -193,60 +253,59 @@ main > article .article-section{
   display: flex;
   justify-content: center;
 }
-#next-arrow{
-  position: absolute;
-  right:  2%;
-  top: 50%;
 
+#next-arrow {
+  position: absolute;
+  right: 2%;
+  top: 50%;
 }
 
-#previous-arrow{
-position: absolute;
+#previous-arrow {
+  position: absolute;
   left: 2%;
   top: 50%;
 }
-.bi-arrow{
 
-}
+.bi-arrow {}
 
-#text-section{
+#text-section {
   display: flex;
   justify-content: center;
 }
 
-
-#text-animation{
+#text-animation {
   position: relative;
 }
-#text-animation::after{
-content: "";
+
+#text-animation::after {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
-  background-color:var(--background-color);
+  background-color: var(--background-color);
   border-left: 3px solid rgb(109, 109, 240);
   animation: typing 3s steps(12) infinite;
-
 }
-#text-animation::before{
+
+#text-animation::before {
   content: attr(data-text);
 }
 
-
 @keyframes typing {
-  40%, 60%{
-    left:calc(100%); 
-   }   
-   100%{
-    left:0%;
-  }   
+
+  40%,
+  60% {
+    left: 100%;
+  }
+
+  100% {
+    left: 0%;
+  }
 }
 
-
-
-#img-section > img {
+#img-section>img {
   width: 97%;
   height: 97%;
   display: block;
@@ -254,37 +313,62 @@ content: "";
   padding: 0;
 }
 
+@media only screen and (max-width: 1000px) {
+  .title-text-section {
+    width: 45%;
+    height: 45%;
+    font-size: 0.9rem;
+    left: 28%;
+  }
+}
 
+@media only screen and (max-width: 800px) {
+  .title-text-section {
+    width: 50%;
+    font-size: calc(0.8rem + 1.5px);
+  }
+}
 
+@media only screen and (max-width: 650px) {
+  .title-text-section {
+    width: 60%;
+    left: 21%;
+    font-size: calc(0.8rem + 1.5px);
+  }
+}
 
-
-
-
-
-
-
-
-
-@media only screen and (max-width: 900px) {
-
-
+@media only screen and (max-width: 596px) {
+  .bi {
+    margin-top: 0 !important;
+  }
 }
 
 @media only screen and (max-width: 541px) {
-  .nav-text{
+  .nav-text {
     font-size: 0.7rem;
   }
+
   #logo {
     width: 40px;
+  }
 
+  .title-text-section {
+    width: 65%;
+    left: 20%;
+    font-size: 0.8rem;
+  }
 }
-}
+
+/* @media only screen and (max-width: 425px) {
+
+
+} */
 @media only screen and (max-width: 320px) {
-  .nav-text{
+  .nav-text {
     font-size: 0.6rem;
   }
+
   #logo {
     width: 36px;
-
-}
+  }
 }
