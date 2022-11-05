@@ -218,7 +218,7 @@ main>article {
 }
 
 main>article .article-section {
-  border: 2px solid red;
+  /* border: 2px solid red; */
   flex-grow: 1;
 }
 
@@ -253,20 +253,12 @@ main>article .article-section {
   display: flex;
   justify-content: center;
 }
-
-#next-arrow {
-  position: absolute;
-  right: 2%;
-  top: 50%;
+.carousel-inner img{
+  width: 100% !important;
+  height: 100% !important;
 }
 
-#previous-arrow {
-  position: absolute;
-  left: 2%;
-  top: 50%;
-}
 
-.bi-arrow {}
 
 #text-section {
   display: flex;
@@ -305,13 +297,13 @@ main>article .article-section {
   }
 }
 
-#img-section>img {
+/* #img-section>img {
   width: 97%;
   height: 97%;
   display: block;
   margin: auto;
   padding: 0;
-}
+} */
 
 @media only screen and (max-width: 1000px) {
   .title-text-section {
