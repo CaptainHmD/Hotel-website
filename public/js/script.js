@@ -20,10 +20,10 @@ const navbar = document.getElementById("navbar");
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     document.getElementById("navbar").style.background = "black";
-    navbar.style.height="12%"
+    navbar.style.height="11%"
   } else {
     document.getElementById("navbar").style.background = "rgb(0, 0, 0, 0.7)";
-    navbar.style.height="10%"
+    navbar.style.height="9%"
 
   }
 }
