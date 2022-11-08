@@ -45,6 +45,10 @@ svg {
   color: white;
   display: flex;
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  /* line-height: normal !important; */
+
 }
 
 a {
@@ -61,7 +65,7 @@ nav {
   width: 100%;
   border-bottom: solid 3px var(--second-icon-background-color);
   /* height: auto; */
-  height: 10%;
+  height: 9%;
   background-color: rgb(0, 0, 0, 0.7);
 }
 
@@ -130,6 +134,12 @@ h2 {
 }
 
 /* end nav */
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+}
 
 
 
@@ -166,14 +176,20 @@ h2 {
 
 .info-text {
   width: 85%;
+  font-size: 1.2rem;
 }
 
 /* end of main page view */
-
+#our-services-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 #our-services{
-  width: 100%;
-  height: 90vh;
+  width: 90%;
+  height: 70vh;
   display: flex;
   flex-direction:column ;
   justify-content: space-around;
@@ -193,8 +209,8 @@ h2 {
 
 
 .cards{
-  width: 90%;
-  height: 80%;
+  width: 98%;
+  height: 95%;
   border:var(--second-icon-background-color) solid 2px;
   align-self: auto;
   justify-self: center;
@@ -212,24 +228,23 @@ h2 {
 /* end of our-services */
 main>article {
   display: flex;
-  height: 90vh;
   flex-direction: column;
-  /* overflow: auto ; */
+}
+/* article:nth-child(1) {
+  height:80vh;
+} */
+.main-page-view {
+  height:90vh;
+  /* background: red !important; */
 }
 
-main>article .article-section {
-  /* border: 2px solid red; */
-  flex-grow: 1;
+.img-view{
+display: flex;
+align-items: center;
+height: 90vh !important;
+gap: 6vh;
+margin-top: 50px;
 }
-
-/* main > article .article-section:nth-child(1){
-  flex-grow:2;
-} */
-
-/* main > article .article-section{
-  flex-grow: 2;
-} */
-
 .text-title {
   font-weight: 600;
 }
@@ -248,7 +263,7 @@ main>article .article-section {
 #img-section {
   position: relative;
   width: 60%;
-  height: 80%;
+  /* height: 80%; */
   border: #c49450 solid 2px;
   display: flex;
   justify-content: center;
@@ -284,6 +299,9 @@ main>article .article-section {
 #text-animation::before {
   content: attr(data-text);
 }
+.text-size{
+  font-size: 2.2vw !important;
+}
 
 @keyframes typing {
 
@@ -309,15 +327,24 @@ main>article .article-section {
   .title-text-section {
     width: 45%;
     height: 45%;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     left: 28%;
   }
+  .info-text {
+    font-size: 1rem;
+    /* width: ; */
+  }
+  
 }
 
 @media only screen and (max-width: 800px) {
   .title-text-section {
     width: 50%;
     font-size: calc(0.8rem + 1.5px);
+  }
+  .info-text {
+    font-size: 1rem;
+    /* width: ; */
   }
 }
 
@@ -327,17 +354,24 @@ main>article .article-section {
     left: 21%;
     font-size: calc(0.8rem + 1.5px);
   }
+  .info-text {
+    font-size: 0.9rem;
+    /* width: ; */
+  }
 }
 
 @media only screen and (max-width: 596px) {
-  .bi {
+  /* .bi {
     margin-top: 0 !important;
-  }
+  } */
 }
 
 @media only screen and (max-width: 541px) {
   .nav-text {
     font-size: 0.7rem;
+  }
+   .bi {
+    margin-top: 0 !important;
   }
 
   #logo {
@@ -363,4 +397,7 @@ main>article .article-section {
   #logo {
     width: 36px;
   }
+  h2,svg{
+  line-height: normal !important;
+}
 }
