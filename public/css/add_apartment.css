@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+/* font-family: 'Roboto Mono', monospace; */
+
+
+:root {
+  --background-color: rgb(20 20 20);
+  --main-icon-background-color: #212325;
+  /* you can merge between them if you want , i prefer to use it*/
+  --second-icon-background-color: #c49450;
+  /* you can merge between them if you want  ** i prefer to not use it , perhaps the icon it self*/
+  --white-color: #ffffff;
+  /* for icons , fonts and any small things */
+}
+
+/* common-screen-sizes-for-responsive-web-design*/
+/* https://learn.microsoft.com/en-us/windows/apps/design/layout/screen-sizes-and-breakpoints-for-responsive-design */
+/* https://www.altamira.ai/blog/common-screen-sizes-for-responsive-web-design/#:~:text=As%20for%20the%20desktop%20version,width%20is%20more%20than%201280.&text=The%20tablet%20screen%20resolution%20varies,800%20and%20768%C3%971024. */
+
+body {
+  background-color: var(--background-color);
+  height: 100vh;
+  margin: 0;
+  /* overflow: hidden; */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+a,
+p,
+span,
+svg {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+  color: white;
+  display: flex;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  /* line-height: normal !important; */
+
+}
+
+a {
+  text-decoration: none;
+}
+
+/* .container {
+    border: 3px dashed red;
+}
+
+
+.my-row, .parent-row {
+    border: 3px dotted rgb(7, 7, 7);
+}
+
+.my-col, .parent-col {
+    border: 3px dotted white;
+} */
+
+#form-title {
+    display: inline;
+    margin: auto;
+    color: var(--second-icon-background-color);
+    margin-bottom: 100px;
+}
+
+input, #description {
+    border: 2px solid var(--second-icon-background-color) !important;
+}
+
+#apartment_form {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: var(--main-icon-background-color);
+    border: 2px solid var(--second-icon-background-color) !important;
+    border-radius: 3px !important;
+
+    
+}
+
+label {
+    color: var(--white-color)
+}
+
+.my-row {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+input[type="submit"] {
+    background-color: var(--second-icon-background-color);
+    border: 1px solid var(--white-color) !important;
+}
+
+input[type="submit"]:hover {
+    background-color: #d1851b;
+    border: 1px solid var(--white-color) !important;
+    -webkit-box-shadow: 0px 8px 20px 0px var(--second-icon-background-color);
+    -moz-box-shadow: 0px 8px 20px 0px var(--second-icon-background-color);
+    box-shadow: 2px 3px 20px 0px var(--second-icon-background-color);
+}
+
