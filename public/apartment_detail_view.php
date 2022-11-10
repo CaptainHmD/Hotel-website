@@ -14,14 +14,14 @@
             <div class="col-12 parent-col my-col">
                 <div class="container-fluid content-cont my-cont">
                     <div class="row content-row justify-content-start my-row">
-                        <div class="col-sm-2 col-5 non-padded-col my-col">
-                            <p class="rating left-aligned-text">8.1</p>
+                        <div class="col-sm-2 col-5 non-padded-col my-col rating-info-col margined-info info-col">
+                            <p class="rating">8.1</p>
                         </div>
-                        <div class="col-sm-2 col-5 non-padded-col my-col">
+                        <div class="col-sm-2 col-5 non-padded-col my-col reviews-info-col margined-info info-col">
                             <p class="reviews left-aligned-text">24591 reviews</p>
                         </div>
-                        <div class="col-sm-8 col-12 non-padded-col my-col">
-                            <p class="address left-aligned-text">Barcelona, Spain</p>
+                        <div class="col-sm-5 col-12 non-padded-col my-col address-info-col info-col">
+                            <p class="country left-aligned-text">Barcelona, Spain</p>
                         </div>
                     </div>
 
@@ -50,29 +50,35 @@
                     </div>
 
                     <div class="row content-row price-row justify-content-start my-row">
-                        <div class="col-2 col-2-info price-col my-col non-padded-col">
+                        <div class="col-2 col-2-info price-col my-col non-padded-col info-col">
                             <p class="price left-aligned-text">price: 1200/month</p>
                         </div>
                     </div>
 
                     <div class="row content-row justify-content-start my-row">
-                        <div class="col-sm-3 col-sm-3-info col-5 col-5-info my-col non-padded-col">
+                        <div class="col-sm-3 col-sm-3-info col-5 col-5-info my-col non-padded-col margined-info info-col">
                             <p class="left-aligned-text">length: 125m</p>
                         </div>
-                        <div class="col-sm-3 col-sm-3-info col-5 col-5-info my-col non-padded-col margined-info">
+                        <div class="col-sm-3 col-sm-3-info col-5 col-5-info my-col non-padded-col margined-info info-col">
                             <p class="left-aligned-text">width: 200m</p>
                         </div>
-                        <div class="col-sm-3 col-sm-3-info col-5 col-5-info my-col non-padded-col margined-info">
+                        <div class="col-sm-3 col-sm-3-info col-5 col-5-info my-col non-padded-col margined-info info-col">
                             <p class="left-aligned-text">rooms: 5</p>
                         </div>
-                        <div class="col-sm-3 col-sm-3-info col-5 col-5-info my-col non-padded-col margined-info">
+                        <div class="col-sm-3 col-sm-3-info col-5 col-5-info my-col non-padded-col info-col">
                             <p class="left-aligned-text">bathrooms: 3</p>
                         </div>
                     </div>
 
                     <div class="row content-row justify-content-start my-row">
-                        <div class="col my-col non-padded-col">
+                        <div class="col my-col non-padded-col info-col">
                             <p class="address left-aligned-text">address: Annakasa, awal bait, ala alyasar</p>
+                        </div>
+                    </div>
+
+                    <div class="row content-row justify-content-start my-row">
+                        <div class="col-11 my-col info-col non-padded-col description-info-col">
+                            <p class="description left-aligned-text">a modern apartment that has a nice beach view with all the necessary utilities</p>
                         </div>
                     </div>
 

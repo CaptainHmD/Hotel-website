@@ -110,7 +110,7 @@
                         </div>
                     </div>
                     <div class="row card-inner-row my-row">
-                        <div class="col-sm-2 card-inner-col my-col">
+                        <div class="col-sm-2 card-inner-col my-col card-rating">
                             <p class="card-rating">7.4</p>
                         </div>
                         <div class="col-sm-10 card-inner-col my-col">
@@ -165,7 +165,7 @@
                         </div>
                     </div>
                     <div class="row card-inner-row my-row">
-                        <div class="col-sm-2 card-inner-col my-col">
+                        <div class="col-sm-2 card-inner-col my-col card-rating">
                             <p class="card-rating">8.1</p>
                         </div>
                         <div class="col-sm-10 card-inner-col my-col">
@@ -220,7 +220,7 @@
                         </div>
                     </div>
                     <div class="row card-inner-row my-row">
-                        <div class="col-sm-2 card-inner-col my-col">
+                        <div class="col-sm-2 card-inner-col my-col card-rating">
                             <p class="card-rating">7.7</p>
                         </div>
                         <div class="col-sm-10 card-inner-col my-col">
@@ -275,7 +275,7 @@
                         </div>
                     </div>
                     <div class="row card-inner-row my-row">
-                        <div class="col-sm-2 card-inner-col my-col">
+                        <div class="col-sm-2 card-inner-col my-col card-rating">
                             <p class="card-rating">9.1</p>
                         </div>
                         <div class="col-sm-10 card-inner-col my-col">

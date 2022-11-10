@@ -115,6 +115,7 @@ a {
 .card-rating {
     background-color: var(--second-icon-background-color);
     border-radius: 5px;
+    width: 45px;
 }
 
 /* change carousel arrow color: https://stackoverflow.com/questions/46249541/change-arrow-colors-in-bootstraps-carousel */
