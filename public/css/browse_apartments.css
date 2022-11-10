@@ -103,9 +103,18 @@ a {
     width: 100%;
 }
 
-.card-price, .card-address, .card-reviews {
+.card-price, .card-address, .card-reviews{
     text-align: start;
     color: var(--white-color);
+}
+
+.card-reviews {
+    margin-left: 3px;
+}
+
+.card-rating {
+    background-color: var(--second-icon-background-color);
+    border-radius: 5px;
 }
 
 /* change carousel arrow color: https://stackoverflow.com/questions/46249541/change-arrow-colors-in-bootstraps-carousel */

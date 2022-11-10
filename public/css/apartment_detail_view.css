@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+/* font-family: 'Roboto Mono', monospace; */
+
+
+:root {
+  --background-color: rgb(20 20 20);
+  --main-icon-background-color: #212325;
+  /* you can merge between them if you want , i prefer to use it*/
+  --second-icon-background-color: #c49450;
+  /* you can merge between them if you want  ** i prefer to not use it , perhaps the icon it self*/
+  --white-color: #ffffff;
+  --carousel-indicator-width: 100px;
+  /* for icons , fonts and any small things */
+}
+
+/* common-screen-sizes-for-responsive-web-design*/
+/* https://learn.microsoft.com/en-us/windows/apps/design/layout/screen-sizes-and-breakpoints-for-responsive-design */
+/* https://www.altamira.ai/blog/common-screen-sizes-for-responsive-web-design/#:~:text=As%20for%20the%20desktop%20version,width%20is%20more%20than%201280.&text=The%20tablet%20screen%20resolution%20varies,800%20and%20768%C3%971024. */
+
+body {
+  background-color: var(--background-color);
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  /* overflow: hidden; */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+a,
+p,
+span,
+svg {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+  color: white;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  /* line-height: normal !important; */
+
+}
+
+a {
+  text-decoration: none;
+}
+
+
+.container-fluid {
+    border: 3px dashed red;
+}
+
+
+.my-row, .parent-row {
+    border: 3px solid rgb(24, 197, 62);
+}
+
+.my-col, .parent-col {
+    border: 3px dotted white;
+}
+
+.content-row {
+    padding: 0px;
+}
+
+.images-right-cont {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+}
+
+.non-padded-col {
+    padding: 0px;
+}
+
+
+.detail-image {
+    height: 100%;
+    width: 100%;
+}
+
+.images-row {
+    height: 100%;
+}
+
+.images-right-col {
+    padding: 0px;
+}
+
+.left-image {
+    border-radius: 10px 0px 0px 10px;
+}
+
+.left-aligned-text {
+    text-align: start;
+}
+
+.address {
+    overflow: auto;
+}
+
+.margined-info {
+    margin-left: 5px;
+}
+
+@media (min-width: 720px){
+    [class*="col-md-5-detail"] {
+        width: 49% !important;
+    } 
+    .images-right-col {
+        margin-left: 6px;
+    }
+}
+
+@media (max-width: 720px){
+    .detail-image-col {
+        margin-bottom: 10px !important;
+    } 
+}
+
+@media (min-width: 540px){
+    [class*="col-sm-3-info"] {
+        width: auto !important;
+    } 
+}
+
+@media (max-width: 540px){
+    [class*="col-5-info"] {
+        width: auto !important;
+    } 
+}
+
+@media (min-width: 0px){
+    [class*="col-2-info"] {
+        width: auto !important;
+    } 
+}
+
+@media (min-width: 0px){
+    [class*="col-5-detail-right"] {
+        width: 49% !important;
+    } 
+}

@@ -51,12 +51,12 @@
                     </div>
                     <div class="row card-inner-row my-row">
                         <div class="col-12 card-inner-col my-col">
-                            <p class="card-price">1500/month</p>
+                            <p class="card-price">1000/month</p>
                         </div>
                     </div>
                     <div class="row card-inner-row my-row">
-                        <div class="col-sm-2 card-inner-col my-col">
-                            <p class="card-reviews">9.5.</p>
+                        <div class="col-sm-2 card-inner-col my-col card-rating">
+                            <p class="card-rating">9.5</p>
                         </div>
                         <div class="col-sm-10 card-inner-col my-col">
                             <p class="card-reviews">1589 reviews</p>
@@ -106,12 +106,12 @@
                     </div>
                     <div class="row card-inner-row my-row">
                         <div class="col-12 card-inner-col my-col">
-                            <p class="card-price">1500/month</p>
+                            <p class="card-price">2000/month</p>
                         </div>
                     </div>
                     <div class="row card-inner-row my-row">
                         <div class="col-sm-2 card-inner-col my-col">
-                            <p class="card-reviews">7.4.</p>
+                            <p class="card-rating">7.4</p>
                         </div>
                         <div class="col-sm-10 card-inner-col my-col">
                             <p class="card-reviews">1054 reviews</p>
@@ -161,12 +161,12 @@
                     </div>
                     <div class="row card-inner-row my-row">
                         <div class="col-12 card-inner-col my-col">
-                            <p class="card-price">1500/month</p>
+                            <p class="card-price">1200/month</p>
                         </div>
                     </div>
                     <div class="row card-inner-row my-row">
                         <div class="col-sm-2 card-inner-col my-col">
-                            <p class="card-reviews">8.1.</p>
+                            <p class="card-rating">8.1</p>
                         </div>
                         <div class="col-sm-10 card-inner-col my-col">
                             <p class="card-reviews">24591 reviews</p>
@@ -221,7 +221,7 @@
                     </div>
                     <div class="row card-inner-row my-row">
                         <div class="col-sm-2 card-inner-col my-col">
-                            <p class="card-reviews">7.7.</p>
+                            <p class="card-rating">7.7</p>
                         </div>
                         <div class="col-sm-10 card-inner-col my-col">
                             <p class="card-reviews">30239 reviews</p>
@@ -276,7 +276,7 @@
                     </div>
                     <div class="row card-inner-row my-row">
                         <div class="col-sm-2 card-inner-col my-col">
-                            <p class="card-reviews">9.1.</p>
+                            <p class="card-rating">9.1</p>
                         </div>
                         <div class="col-sm-10 card-inner-col my-col">
                             <p class="card-reviews">2390 reviews</p>
