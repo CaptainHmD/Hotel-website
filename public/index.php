@@ -118,13 +118,13 @@
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active" data-bs-interval="3000">
-                            <img src="../resources/hotel-images/single room4.jpg" class="d-block w-auto" alt="...">
+                            <img src="../resources/hotel-images/single room4.jpg" class="d-block w-auto carousel-img" alt="...">
                         </div>
                         <div class="carousel-item" data-bs-interval="3000">
-                            <img src="../resources/hotel-images/single room.jpg" class="d-block w-auto" alt="...">
+                            <img src="../resources/hotel-images/single room.jpg" class="d-block w-auto carousel-img" alt="...">
                         </div>
                         <div class="carousel-item" data-bs-interval="3000">
-                            <img src="../resources/hotel-images/single room2.jpg" class="d-block w-auto" alt="...">
+                            <img src="../resources/hotel-images/single room2.jpg" class="d-block w-auto carousel-img" alt="...">
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"

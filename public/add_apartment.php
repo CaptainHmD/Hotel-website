@@ -26,10 +26,25 @@
                         </div>
 
                         <div class="form-row row justify-content-center my-row">
+                            <div class='col-sm-6 my-col'>
+                                <div class="mb-3">
+                                    <label for="country" class="form-label">Apartment country</label>
+                                    <input type="text" name="country" class="form-control" id="country" placeholder="Saudi Arabia">
+                                </div>
+                            </div>
+                            <div class='col-sm-6 my-col'>
+                                <div class="mb-3">
+                                <label for="city" class="form-label">Apartment city</label>
+                                    <input type="text" name="city" class="form-control" id="city" placeholder="Makkah">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-row row justify-content-center my-row">
                             <div class='col-12 my-col'>
                                 <div class="mb-3">
                                     <label for="address" class="form-label">Apartment Address</label>
-                                    <input type="text" name="address" class="form-control" id="address" placeholder="Saudi Arabia, Makkah, Annuzha, Alqadi...">
+                                    <input type="text" name="address" class="form-control" id="address" placeholder="Annuzha, Alqadi street, building 444...">
                                 </div>
                             </div>
                         </div>

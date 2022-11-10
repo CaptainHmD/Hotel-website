@@ -41,9 +41,8 @@ span,
 svg {
   font-family: "Roboto Mono", monospace;
   font-weight: 400;
-  color: white;
-  display: flex;
   text-align: center;
+  color: white;
   margin-top: 0;
   margin-bottom: 0;
   /* line-height: normal !important; */
@@ -56,14 +55,14 @@ a {
 
 /* .container {
     border: 3px dashed red;
-}
+} */
 
 
-.my-row, .parent-row {
+/* .my-row, .parent-row {
     border: 3px dotted rgb(7, 7, 7);
-}
+} */
 
-.my-col, .parent-col {
+/* .my-col, .parent-col {
     border: 3px dotted white;
 } */
 
@@ -84,8 +83,6 @@ input, #description {
     background-color: var(--main-icon-background-color);
     border: 2px solid var(--second-icon-background-color) !important;
     border-radius: 3px !important;
-
-    
 }
 
 label {
@@ -100,7 +97,6 @@ label {
 
 input[type="submit"] {
     background-color: var(--second-icon-background-color);
-    border: 1px solid var(--white-color) !important;
 }
 
 input[type="submit"]:hover {
