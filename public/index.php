@@ -6,34 +6,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel Information System</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
-    
+
 </head>
 
 <body>
     <!-- <div class="container"> -->
     <nav id="navbar">
         <div class="nav-section" id="logo-section">
-            <div> <a href="#">
+            <div id="logo-wrapper"> <a href="http://172.104.152.80:5001/add_apartment.php" id="d-gap">
                     <img id="logo" src="../resources/icons/a6c89eb25f20c37a608f1cef9ca70d24.svg" alt="">
+                    <div id="nav-text-wrapper">
+                        <h1 class="nav-text" id="hotel-nav">hotel</h1>
+                    </div>
                 </a>
-                <a href="#">
-                    <h1 class="nav-text">hotel</h1>
-                </a>
+
             </div>
 
             <!-- must be list and reveal result on hover -->
             <div class="dropdown">
-                <h2 class="nav-section nav-text" id="fast-travail">Fast Travel&nbsp;</h2>
+
+
+                <!-- <h2 class="nav-section nav-text" id="fast-travail">Fast Travel&nbsp;</h2>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                     class="bi bi-caret-down-fill" style="margin-top: 4px;white-space: nowrap;" viewBox="0 0 16 16" s>
                     <path
                         d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
-                </svg>
+                </svg> -->
+
+                <button class="btn  btn-secondary dropdown-toggle dropdown-btn" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Fast Travel
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="#home-travel" class="dropdown-item">home-travel</a></li>
+                    <li><a href="#our-services-wrapper" class="dropdown-item">services-travel</a></li>
+                    <li><a href="#img-tr" class="dropdown-item">img-travel</a></li>
+                </ul>
+
             </div>
         </div>
- 
+
         <div class="nav-section" id="register-section">
             <h1>
                 <a href="/register" id="register-text" class="nav-text">Sign Up</a>
@@ -48,7 +63,7 @@
 
     <main>
 
-        <article class="main-page-view">
+        <article class="main-page-view" id="home-travel">
             <div id="img-full-fill">
 
                 <div class="title-text-section">
@@ -56,8 +71,7 @@
                         <h1>The Vacation Heaven</h1>
                     </div>
                     <h4 class="info-text ">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, architecto laborum pariatur
-                        magni labore dolor nemo nesciunt omnis fuga ad!
+                        There is no Vacation in UQU bi... &nbsp;&nbsp;&nbsp;D:
                     </h4>
                 </div>
 
@@ -69,80 +83,74 @@
         <!-- after main view will be our services then the text animation and img swapping -->
         <article class="article-section" id="our-services-wrapper">
             <div id="our-services">
-            <div class="services-title">
-                <h2>Our Services</h2>
+                <div class="services-title">
+                    <h2 >Our Services</h2>
+                </div>
+                <div class="services-wrapper">
+                    <div class="cards box-shadow"></div>
+                    <div class="cards box-shadow"></div>
+                    <div class="cards box-shadow"></div>
+                    <div class="cards box-shadow"></div>
+                    <div class="cards box-shadow"></div>
+                    <div class="cards box-shadow"></div>
+                </div>
             </div>
-            <div class="services-wrapper">
-                <div class="cards"></div>
-                <div class="cards"></div>
-                <div class="cards"></div>
-                <div class="cards"></div>
-                <div class="cards"></div>
-                <div class="cards"></div>
-            </div>
-</div>  
         </article>
 
-        <article class="img-view">
+        <article class="img-view" id="img-tr">
             <!-- <div class="article-section" id="img-text-section"> -->
 
-                <div id="text-section">
-                    <h2 class="text-title text-size">find your best friend&nbsp;<h2 id="text-animation" class="text-title text-size"
-                            data-text="hi im span"></h2></h2>
-                </div>
-                <div id="img-section">
-                   
-                    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <div id="text-section">
+                <h2 class="text-title text-size">Top Rating&nbsp;<h2 id="text-animation" class="text-title text-size"
+                        data-text="Single Room~"></h2>
+                </h2>
+            </div>
+            <div id="img-section">
+
+                <div id="carouselExampleDark" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="3000">
+                            <img src="../resources/hotel-images/single room4.jpg" class="d-block w-auto" alt="...">
                         </div>
-                        <div class="carousel-inner">
-                          <div class="carousel-item active" data-bs-interval="3000">
-                            <img src="../resources/hotel-images/hotel2.jpg" class="d-block w-auto" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                              <h5>First slide label</h5>
-                              <p>Some representative placeholder content for the first slide.</p>
-                            </div>
-                          </div>
-                          <div class="carousel-item" data-bs-interval="3000">
-                            <img src="../resources/hotel-images/hotel1.jpg" class="d-block w-auto" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                              <h5>Second slide label</h5>
-                              <p>Some representative placeholder content for the second slide.</p>
-                            </div>
-                          </div>
-                          <div class="carousel-item"data-bs-interval="3000">
-                            <img src="../resources/hotel-images/main1.jpg" class="d-block w-auto" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                              <h5>Third slide label</h5>
-                              <p>Some representative placeholder content for the third slide.</p>
-                            </div>
-                          </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img src="../resources/hotel-images/single room.jpg" class="d-block w-auto" alt="...">
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Next</span>
-                        </button>
-                      </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img src="../resources/hotel-images/single room2.jpg" class="d-block w-auto" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
+            </div>
             <!-- </div> -->
         </article>
         <!-- <article></article>
         <article></article>
         <article></article> -->
-            <div style="margin-bottom: 10vh;"></div>
+        <div style="margin-bottom: 10vh;"></div>
     </main>
 
     <!-- </div> -->
     <script src="../js/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
 </body>
 
 </html>
