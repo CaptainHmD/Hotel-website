@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
 /* font-family: 'Roboto Mono', monospace; */
 
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@500&display=swap');/* font-family: 'Signika Negative', sans-serif; */
+
 
 :root {
   --background-color: rgb(20 20 20);
@@ -22,7 +24,8 @@ body {
   flex-direction: column;
   height: 100vh;
   margin: 0;
-  /* overflow: hidden; */
+  overflow-x: hidden; /* Hide vertical scrollbar */
+
 }
 
 * {
@@ -40,8 +43,9 @@ a,
 p,
 span,
 svg {
-  font-family: "Roboto Mono", monospace;
-  font-weight: 400;
+  /* font-family: "Roboto Mono", monospace; */
+  font-family: 'Signika Negative', sans-serif;
+  font-weight: 400 !important;
   color: white;
   display: flex;
   text-align: center;
@@ -65,7 +69,7 @@ nav {
   width: 100%;
   border-bottom: solid 3px var(--second-icon-background-color);
   /* height: auto; */
-  height: 9%;
+  height: 13%;
   background-color: rgb(0, 0, 0, 0.7);
 }
 
@@ -84,7 +88,14 @@ nav {
 }
 
 .nav-text {
-  font-size: 1rem;
+  font-size: 1.2rem;
+}
+#nav-text-wrapper{
+  display: flex;
+  align-items: center;
+}
+#hotel-nav{
+/* text-align: center; */
 }
 
 nav>.nav-section {
@@ -113,6 +124,13 @@ nav>.nav-section {
   flex-grow: 1;
 }
 
+#logo-wrapper{
+  margin-left: 20%;
+}
+#d-gap{
+  display: flex;
+  gap:1.5vw;
+}
 #logo-section>.dropdown {
   /* background-color: red; */
   padding: 8px;
@@ -155,6 +173,19 @@ main{
   background-position: center;
   position: static;
   display: block;
+  animation:zoom 30s linear  infinite;
+  /* overflow: auto; */
+  transition: all 1s;
+
+}
+@keyframes zoom {
+
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 .title-text-section {
@@ -175,8 +206,9 @@ main{
 .title {}
 
 .info-text {
-  width: 85%;
+  max-width: 85%;
   font-size: 1.2rem;
+  
 }
 
 /* end of main page view */
@@ -218,6 +250,23 @@ main{
   background-color: var(--main-icon-background-color);
 }
 
+.cards:nth-child(1){
+  background-image: url("https://cdn-icons-png.flaticon.com/512/2058/2058432.png");
+  background-size: 20%;
+  background-position-y: 80%;
+  background-repeat: repeat-x;
+}
+.cards:nth-child(2){
+}
+.cards:nth-child(3){
+}
+.cards:nth-child(4){
+}
+.cards:nth-child(5){
+}
+.cards:nth-child(6){
+}
+
 
 
 
@@ -241,9 +290,10 @@ main>article {
 .img-view{
 display: flex;
 align-items: center;
-height: 90vh !important;
+min-height: fit-content !important;
 gap: 6vh;
 margin-top: 50px;
+margin-bottom: 10vh;
 }
 .text-title {
   font-weight: 600;
@@ -265,8 +315,16 @@ margin-top: 50px;
   width: 60%;
   /* height: 80%; */
   border: #c49450 solid 2px;
+  border-radius: 2rem;
   display: flex;
   justify-content: center;
+  box-shadow: -8px -1px 11px 12px rgba(173,173,173,0.3);
+-webkit-box-shadow: -8px -1px 11px 12px rgba(173,173,173,0.3);
+-moz-box-shadow: -8px -1px 11px 12px rgba(173,173,173,0.3);
+}
+#img-section *{
+  border-radius: 2rem;
+
 }
 .carousel-inner img{
   width: 100% !important;
@@ -303,6 +361,11 @@ margin-top: 50px;
   font-size: 2.2vw !important;
 }
 
+.box-shadow {
+  box-shadow: 1px 0px 10px 2px rgba(57, 57, 57, 0.89);
+  -webkit-box-shadow: 1px 0px 10px 2px rgba(57, 57, 57, 0.89);
+  -moz-box-shadow: 1px 0px 10px 2px rgba(57, 57, 57, 0.89);
+}
 @keyframes typing {
 
   40%,
@@ -334,6 +397,11 @@ margin-top: 50px;
     font-size: 1rem;
     /* width: ; */
   }
+
+  #our-services {
+    width: 90%;
+    height: 60vh;
+  }
   
 }
 
@@ -346,6 +414,14 @@ margin-top: 50px;
     font-size: 1rem;
     /* width: ; */
   }
+  #logo-wrapper{
+    margin-left: 0;
+  }
+  #our-services {
+    width: 110%;
+    /* height: 60vh; */
+  }
+
 }
 
 @media only screen and (max-width: 650px) {
@@ -357,6 +433,15 @@ margin-top: 50px;
   .info-text {
     font-size: 0.9rem;
     /* width: ; */
+  }
+  
+  .services-wrapper{
+    grid-template-columns: repeat(2,1fr);
+
+  }
+  #our-services {
+    width: 90%;
+    height: 60vh;
   }
 }
 
@@ -383,12 +468,16 @@ margin-top: 50px;
     left: 20%;
     font-size: 0.8rem;
   }
+ 
 }
 
-/* @media only screen and (max-width: 425px) {
+@media only screen and (max-width: 425px) {
 
-
-} */
+  #our-services {
+    width: 100%;
+    height: 60vh;
+  }
+}
 @media only screen and (max-width: 320px) {
   .nav-text {
     font-size: 0.6rem;
@@ -400,4 +489,5 @@ margin-top: 50px;
   h2,svg{
   line-height: normal !important;
 }
+
 }

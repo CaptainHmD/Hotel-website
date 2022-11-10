@@ -1,7 +1,7 @@
 const textAnimation = document.querySelector('#text-animation');
 
 let textCounter = 0
-const prettyPhrases = ['hi guys',"im hamad","i like","nothing !!","end of e"]
+const prettyPhrases = ['Deluxe Suite~',"Double Room~","Single Room~"]
 textAnimation.addEventListener('animationiteration', () => {
     if(prettyPhrases.length===textCounter)
     textCounter=0
@@ -20,10 +20,10 @@ const navbar = document.getElementById("navbar");
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     document.getElementById("navbar").style.background = "black";
-    navbar.style.height="11%"
+    navbar.style.height="10%"
   } else {
     document.getElementById("navbar").style.background = "rgb(0, 0, 0, 0.7)";
-    navbar.style.height="9%"
+    navbar.style.height="13%"
 
   }
 }
