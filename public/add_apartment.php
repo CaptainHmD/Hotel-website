@@ -86,6 +86,14 @@
                                     <input type="number" name="price" class="form-control" id="price" min=1>
                                 </div>
                             </div>
+                            <div class='col-sm-6 my-col'>
+                                <div class="mb-3">
+                                    <div class="mb-3">
+                                        <label for="apartment_images" class="form-label">Apartment images</label>
+                                        <input class="form-control" type="file" id="apartment_images" name="apartment_images" multiple>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
                         <div class="form-row row justify-content-center my-row">
@@ -96,6 +104,15 @@
                                 </div>
                             </div>
                         </div>
+
+                        <!-- <div class="form-row row justify-content-center my-row">
+                            <div class='col-sm-10 my-col'>
+                                <div class="mb-3">
+                                    <label for="apartment_images" class="form-label">Apartment images</label>
+                                    <input class="form-control" type="file" id="apartment_images" name="apartment_images" multiple>
+                                </div>
+                            </div>
+                        </div> -->
 
                         <div class="form-row row justify-content-center my-row">
                             <div class='col-sm-5 my-col'>
