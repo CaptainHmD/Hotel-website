@@ -90,7 +90,7 @@
                                 <div class="mb-3">
                                     <div class="mb-3">
                                         <label for="apartment_images" class="form-label">Apartment images</label>
-                                        <input class="form-control" type="file" id="apartment_images" name="apartment_images" multiple>
+                                        <input class="form-control" type="file" id="apartment_images" name="apartment_images" accept="image/png, image/jpeg, image/jpg" multiple>
                                     </div>
                                 </div>
                             </div>
