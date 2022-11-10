@@ -94,6 +94,12 @@ a {
     width: 100%;
 }
 
+.detail-image:hover {
+    height: 100%;
+    width: 100%;
+    opacity: 0.8;
+}
+
 .images-row {
     height: 100%;
 }
@@ -104,6 +110,10 @@ a {
 
 .left-image {
     border-radius: 10px 0px 0px 10px;
+}
+
+.right-image {
+    aspect-ratio: 20/13;
 }
 
 .left-aligned-text {
@@ -132,6 +142,7 @@ a {
     min-height: 100px;
     background-color: var(--main-icon-background-color);
     border-radius: 4px;
+    color: var(--white-color);
 }
 
 .description {
@@ -153,8 +164,8 @@ a {
     }
 
     .parent-col {
-        padding-left: 50px;
-        padding-right: 50px;
+        padding-left: 80px;
+        padding-right: 80px;
     }
     
 }

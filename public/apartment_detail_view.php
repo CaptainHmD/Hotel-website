@@ -27,22 +27,22 @@
 
                     <div class="row content-row images-row justify-content-start my-row">
                         <div class="col-sm-12 col-md-5 col-md-5-detail detail-image-col non-padded-col my-col">
-                            <img src="https://www.benttreeapartments.com/content/dam/aimco-properties/bent-tree-apartments/1920x1121/interior/BentTree-ChestnutPremier-Kitchen1_staged.jpg" alt="" class="detail-image left-image">
+                            <img src="https://www.thearmitage.com/assets/images/home/2000/home_banner_v7.jpg" alt="" class="detail-image left-image">
                         </div>
                         <div class="col-sm-12 col-md-5 col-md-5-detail images-right-col my-col">
                             <div class="container-fluid images-right-cont my-cont">
                                 <div class="row justify-content-between images-row my-row">
                                     <div class="col-5 col-5-detail-right detail-image-col non-padded-col my-col">
-                                        <img src="https://www.benttreeapartments.com/content/dam/aimco-properties/bent-tree-apartments/1920x1121/interior/BentTree-ChestnutPremier-Kitchen1_staged.jpg" alt="" class="detail-image">
+                                        <img src="https://images1.apartments.com/i2/1zpSWQwDVnd-mQZVCUuBqDtPT_U2fB6EcHMIhsBqGus/117/blake-lofts-los-angeles-ca-building-photo.jpg" alt="" class="detail-image right-image">
                                     </div>
                                     <div class="col-5 col-5-detail-right detail-image-col non-padded-col my-col">
-                                        <img src="https://www.benttreeapartments.com/content/dam/aimco-properties/bent-tree-apartments/1920x1121/interior/BentTree-ChestnutPremier-Kitchen1_staged.jpg" alt="" class="detail-image">
+                                        <img src="https://images1.apartments.com/i2/KiAh59Odk3yaqTrbWICxK7rvRxYhRBWJUNVCyoMVOjM/117/bristol-station-apartments-carteret-nj-building-photo.jpg" alt="" class="detail-image right-image">
                                     </div>
                                     <div class="col-5 col-5-detail-right detail-image-col non-padded-col align-self-end my-col">
-                                        <img src="https://www.benttreeapartments.com/content/dam/aimco-properties/bent-tree-apartments/1920x1121/interior/BentTree-ChestnutPremier-Kitchen1_staged.jpg" alt="" class="detail-image">
+                                        <img src="https://images1.apartments.com/i2/qTHy4dIvoEVeXrVhVwTzWu1ygQ0xeUXjvgiOwIxWSnE/117/livingston-apartment-flats-chesterfield-va-building-photo.jpg" alt="" class="detail-image right-image">
                                     </div>
                                     <div class="col-5 col-5-detail-right detail-image-col non-padded-col align-self-end my-col">
-                                        <img src="https://www.benttreeapartments.com/content/dam/aimco-properties/bent-tree-apartments/1920x1121/interior/BentTree-ChestnutPremier-Kitchen1_staged.jpg" alt="" class="detail-image">
+                                        <img src="https://www.benttreeapartments.com/content/dam/aimco-properties/bent-tree-apartments/1920x1121/interior/BentTree-ChestnutPremier-Kitchen1_staged.jpg" alt="" class="detail-image right-image">
                                     </div>
                                 </div>
                             </div>
