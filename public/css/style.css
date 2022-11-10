@@ -273,6 +273,11 @@ main{
   justify-self: center;
   border-radius: 10px;
   background-color: var(--main-icon-background-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  
 }
 
 .cards:nth-child(1){
@@ -292,10 +297,18 @@ main{
 .cards:nth-child(6){
 }
 
+.bgdcolor{
+background-color: rgb(19, 21, 22) !important;
+  color: #ffffff;
+}
 
 
-
-
+.btn-close{
+  color: red !important;
+  background:url("https://cdn-icons-png.flaticon.com/512/1828/1828666.png") center/1.3em
+   auto no-repeat;
+      border: 0;
+}
 
 
 
@@ -337,8 +350,7 @@ margin-bottom: 10vh;
 
 #img-section {
   position: relative;
-  width: 60%;
-  /* height: 80%; */
+  width: 50%;
   border: #c49450 solid 2px;
   border-radius: 1.2rem;
   display: flex;
@@ -468,6 +480,13 @@ margin-bottom: 10vh;
     width: 90%;
     height: 60vh;
   }
+  #img-section {
+    width: 70%;
+
+  }
+  .text-size{
+    font-size: 2.6vw !important;
+  }
 }
 
 @media only screen and (max-width: 596px) {
@@ -493,7 +512,17 @@ margin-bottom: 10vh;
     left: 20%;
     font-size: 0.8rem;
   }
- 
+  #img-section {
+    width: 75%;
+
+  }
+  .text-size{
+    font-size: 2.9vw !important;
+  }
+  
+  .img-view {
+    gap: 3vh;
+  }
 }
 
 @media only screen and (max-width: 425px) {
@@ -502,6 +531,15 @@ margin-bottom: 10vh;
     width: 100%;
     height: 60vh;
   }
+  #img-section {
+    width: 80%;
+
+  }
+  .text-size{
+    font-size: 3.2vw !important;
+  }
+  
+
 }
 @media only screen and (max-width: 320px) {
   .nav-text {
