@@ -51,7 +51,7 @@
 
                     <div class="row content-row price-row justify-content-start my-row">
                         <div class="col-2 col-2-info price-col my-col non-padded-col info-col">
-                            <p class="price left-aligned-text">price: 1200/month</p>
+                            <p class="price left-aligned-text">1200$/month</p>
                         </div>
                     </div>
 
@@ -72,13 +72,54 @@
 
                     <div class="row content-row justify-content-start my-row">
                         <div class="col my-col non-padded-col info-col">
-                            <p class="address left-aligned-text">address: Annakasa, awal bait, ala alyasar</p>
+                            <p class="address left-aligned-text">Annakasa, awal bait, ala alyasar</p>
                         </div>
                     </div>
 
                     <div class="row content-row justify-content-start my-row">
                         <div class="col-11 my-col info-col non-padded-col description-info-col">
                             <p class="description left-aligned-text">a modern apartment that has a nice beach view with all the necessary utilities</p>
+                        </div>
+                    </div>
+
+                    <div class="row content-row justify-content-start my-row">
+                        <div class="col-11 my-col info-col non-padded-col">
+                            <button type="button" class="btn btn-primary rating-btn" data-bs-toggle="modal" data-bs-target="#rating-modal">
+                                Leave a rating
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="rating-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="rating-modal-label" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5 rating-modal-label" id="rating-modal-label">Rate this apartment</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="mb-3">
+                                                <label for="message-text" class="col-form-label">Comment</label>
+                                                <textarea class="form-control modal-text-area" id="message-text" placeholder="it was a nice stay..."></textarea>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="customRange2" class="form-label">rating</label>
+                                                <input type="range" class="form-range" min="1" max="10" step="1" value="5" id="customRange2" oninput="this.nextElementSibling.value = this.value">
+                                                <output>5</output>
+                                            </div>
+                                            <div class="mb-3">
+                                            <button type="button" class="btn rating-btn-submit">Save changes</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                        <!-- <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn rating-btn-submit">Save changes</button>
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
 

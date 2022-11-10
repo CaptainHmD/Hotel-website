@@ -69,9 +69,9 @@ a {
     border: 3px dotted white;
 } */
 
-
 .content-cont {
     margin-top: 50px;
+    margin-bottom: 100px;
 }
 
 .content-row {
@@ -142,6 +142,8 @@ a {
     min-height: 100px;
     background-color: var(--main-icon-background-color);
     border-radius: 4px;
+    border: 1px solid;
+    border-color: var(--second-icon-background-color);
     color: var(--white-color);
 }
 
@@ -154,6 +156,59 @@ a {
     border-radius: 5px; */
     margin-bottom: 10px;
 }
+
+.rating-modal-label {
+    color: var(--main-icon-background-color);
+}
+
+.rating-btn {
+    background-color: var(--main-icon-background-color);
+    border: 1px solid;
+    border-color: var(--second-icon-background-color);
+}
+
+.rating-btn-submit {
+    color: var(--second-icon-background-color);
+    background-color: var(--main-icon-background-color);
+    border: 1px solid;
+    border-color: var(--second-icon-background-color);
+}
+
+.rating-btn:hover {
+    border-color: var(--white-color);
+    border: 1px solid;
+    background-color: var(--second-icon-background-color);
+}
+
+.rating-btn-submit:hover {
+    color: var(--main-icon-background-color);
+    background-color: var(--second-icon-background-color);
+    border: 1px solid;
+    border-color: var(--main-icon-background-color);
+}
+
+.modal {
+    background-color: rgb(33, 35, 37, 0.3);
+}
+
+.modal-content {
+    background-color: rgb(255, 255, 255, 0.6);
+}
+
+.modal-text-area {
+    border: 1px solid;
+    border-color: var(--second-icon-background-color);
+    background-color: var(--main-icon-background-color);
+    color: var(--second-icon-background-color);
+}
+
+.modal-text-area:focus {
+    border: 1px solid;
+    border-color: var(--second-icon-background-color);
+    background-color: var(--main-icon-background-color);
+    color: var(--second-icon-background-color);
+}
+
 
 @media (min-width: 720px){
     [class*="col-md-5-detail"] {
@@ -199,3 +254,4 @@ a {
         width: 49% !important;
     } 
 }
+
