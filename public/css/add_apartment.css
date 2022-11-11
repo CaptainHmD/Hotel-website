@@ -83,6 +83,9 @@ input, #description {
     background-color: var(--main-icon-background-color);
     border: 2px solid var(--second-icon-background-color) !important;
     border-radius: 3px !important;
+    -webkit-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 8px 20px 0px rgba(0, 0, 0);
 }
 
 label {
@@ -107,3 +110,12 @@ input[type="submit"]:hover {
     box-shadow: 2px 3px 20px 0px var(--second-icon-background-color);
 }
 
+.add_form_field {
+    background-color: black;
+    color: var(--white-color);
+}
+
+.add_form_field:focus {
+    background-color: black;
+    color: var(--white-color);
+}

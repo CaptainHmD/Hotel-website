@@ -29,13 +29,13 @@
                             <div class='col-sm-6 my-col'>
                                 <div class="mb-3">
                                     <label for="country" class="form-label">Apartment country</label>
-                                    <input type="text" name="country" class="form-control" id="country" placeholder="Saudi Arabia">
+                                    <input type="text" name="country" class="form-control add_form_field" id="country" placeholder="Saudi Arabia">
                                 </div>
                             </div>
                             <div class='col-sm-6 my-col'>
                                 <div class="mb-3">
                                 <label for="city" class="form-label">Apartment city</label>
-                                    <input type="text" name="city" class="form-control" id="city" placeholder="Makkah">
+                                    <input type="text" name="city" class="form-control add_form_field" id="city" placeholder="Makkah">
                                 </div>
                             </div>
                         </div>
@@ -44,7 +44,7 @@
                             <div class='col-12 my-col'>
                                 <div class="mb-3">
                                     <label for="address" class="form-label">Apartment Address</label>
-                                    <input type="text" name="address" class="form-control" id="address" placeholder="Annuzha, Alqadi street, building 444...">
+                                    <input type="text" name="address" class="form-control add_form_field" id="address" placeholder="Annuzha, Alqadi street, building 444...">
                                 </div>
                             </div>
                         </div>
@@ -53,13 +53,13 @@
                             <div class='col-sm-6 my-col'>
                                 <div class="mb-3">
                                     <label for="length" class="form-label">Apartment length (meters)</label>
-                                    <input type="number" name="length" class="form-control" id="length" min=10>
+                                    <input type="number" name="length" class="form-control add_form_field" id="length" min=10>
                                 </div>
                             </div>
                             <div class='col-sm-6 my-col'>
                                 <div class="mb-3">
                                     <label for="width" class="form-label">Apartment width (meters)</label>
-                                    <input type="number" name="width" class="form-control" id="width" min=10>
+                                    <input type="number" name="width" class="form-control add_form_field" id="width" min=10>
                                 </div>
                             </div>
                         </div>
@@ -68,13 +68,13 @@
                             <div class='col-sm-6 my-col'>
                                 <div class="mb-3">
                                     <label for="rooms" class="form-label">Number of rooms</label>
-                                    <input type="number" name="rooms" class="form-control" id="rooms" min=1>
+                                    <input type="number" name="rooms" class="form-control add_form_field" id="rooms" min=1>
                                 </div>
                             </div>
                             <div class='col-sm-6 my-col'>
                                 <div class="mb-3">
                                     <label for="bathrooms" class="form-label">Number of bathrooms</label>
-                                    <input type="number" name="bathrooms" class="form-control" id="bathrooms" min=1>
+                                    <input type="number" name="bathrooms" class="form-control add_form_field" id="bathrooms" min=1>
                                 </div>
                             </div>
                         </div>
@@ -83,14 +83,14 @@
                             <div class='col-sm-6 my-col'>
                                 <div class="mb-3">
                                     <label for="price" class="form-label">Apartment price per month</label>
-                                    <input type="number" name="price" class="form-control" id="price" min=1>
+                                    <input type="number" name="price" class="form-control add_form_field" id="price" min=1>
                                 </div>
                             </div>
                             <div class='col-sm-6 my-col'>
                                 <div class="mb-3">
                                     <div class="mb-3">
                                         <label for="apartment_images" class="form-label">Apartment images</label>
-                                        <input class="form-control" type="file" id="apartment_images" name="apartment_images" accept="image/png, image/jpeg, image/jpg" multiple>
+                                        <input class="form-control add_form_field" type="file" id="apartment_images" name="apartment_images" accept="image/png, image/jpeg, image/jpg" multiple>
                                     </div>
                                 </div>
                             </div>
@@ -100,7 +100,7 @@
                             <div class='col-sm-10 my-col'>
                                 <div class="mb-3">
                                     <label for="description" class="form-label">Apartment description</label>
-                                    <textarea name="description" class="form-control" id="description" cols="60" rows="5" placeholder="A modern apartment with a beach view..."></textarea>
+                                    <textarea name="description" class="form-control add_form_field" id="description" cols="60" rows="5" placeholder="A modern apartment with a beach view..."></textarea>
                                 </div>
                             </div>
                         </div>
