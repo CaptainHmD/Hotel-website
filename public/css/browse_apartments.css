@@ -183,33 +183,3 @@ a {
 
 
 
-
-.footer{
-    color: white;
-    background-color: var(--background-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 6%;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    z-index: 999;
-    border-top: var(--second-icon-background-color) 3px solid;
-  }
-  
-  .d-flex-with-gap{
-    display: flex;
-    gap: 4%;
-  }
-  .d-flex-with-gap > h6{
-    white-space: nowrap;
-  }
-  .d-flex-with-gap:nth-child(2)::before{
-    content: "";
-    width: 20%;
-  }
-  .d-flex-with-gap > h6{
-    font-size: 1rem;
-  }

@@ -11,8 +11,7 @@
     <link rel="stylesheet" href="../css/style.css">
 
 </head>
-
-<body>
+<body class="main-body">
     <!-- <div class="container"> -->
     <nav id="navbar">
         <div class="nav-section" id="logo-section">
@@ -36,8 +35,8 @@
                         d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
                 </svg> -->
 
-                <button class="btn  btn-secondary dropdown-toggle dropdown-btn nav-text" type="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">
+                <button class="btn  btn-secondary dropdown-toggle dropdown-btn nav-text" type="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
                     Fast Travel
                 </button>
                 <ul class="dropdown-menu">
@@ -61,9 +60,9 @@
         </div>
     </nav>
 
-    <main>
+    <main class="main-section">
 
-        <article class="main-page-view" id="home-travel">
+        <article class="main-page-view article-style" id="home-travel">
             <div id="img-full-fill">
 
                 <div class="title-text-section">
@@ -81,7 +80,7 @@
 
         <!-- <div class="article-section"></div> -->
         <!-- after main view will be our services then the text animation and img swapping -->
-        <article class="article-section" id="our-services-wrapper">
+        <article class="article-section article-style" id="our-services-wrapper">
             <div id="our-services">
                 <div class="services-title">
                     <h2>Our Services</h2>
@@ -277,7 +276,7 @@
             </div>
         </article>
 
-        <article class="img-view" id="img-tr">
+        <article class="img-view article-style" id="img-tr">
             <!-- <div class="article-section" id="img-text-section"> -->
 
             <div id="text-section">
@@ -324,15 +323,26 @@
         <!-- <article></article>
         <article></article>
         <article></article> -->
-        <div style="margin-bottom: 10vh;" ></div>
+        <div style="margin-bottom: 10vh;"></div>
 
         <!-- footer -->
-            <div class="footer">
-                <div class="col-6 d-flex-with-gap"><h6>	&copy; 2022 WP Hotel</h6> <h6>Privacy</h6> <h6>Terms</h6> <h6>Sitemap</h6> <h6>Destinations</h6></div>
-                <div class="col-5 d-flex-with-gap ps-5"> <h6>&#9728; English (US)</h6> <h6>SR
-                    SAR</h6> <h6><a href="https://github.com/CaptainHmD/Hotel-website"><img src="../resources/icons/code-2-16.png"   alt=""> &nbsp;source code</a></h6></div>
+        <div class="footer">
+            <div class="col-6 d-flex-with-gap">
+                <h6> &copy; 2022 WP Hotel</h6>
+                <h6>Privacy</h6>
+                <h6>Terms</h6>
+                <h6>Sitemap</h6>
+                <h6>Destinations</h6>
             </div>
-            <!-- footer end -->
+            <div class="col-5 d-flex-with-gap ps-5">
+                <h6>&#9728; English (US)</h6>
+                <h6>SR
+                    SAR</h6>
+                <h6><a href="https://github.com/CaptainHmD/Hotel-website"><img src="../resources/icons/code-2-16.png"
+                            alt=""> &nbsp;source code</a></h6>
+            </div>
+        </div>
+        <!-- footer end -->
     </main>
 
     <script src="../js/script.js"></script>
