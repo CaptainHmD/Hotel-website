@@ -3,8 +3,8 @@
 
 
 :root {
-  --background-color: rgb(20 20 20);
-  --main-icon-background-color: #212325;
+  --background-color: #212325;
+  --main-icon-background-color: rgb(20 20 20);
   /* you can merge between them if you want , i prefer to use it*/
   --second-icon-background-color: #c49450;
   /* you can merge between them if you want  ** i prefer to not use it , perhaps the icon it self*/
