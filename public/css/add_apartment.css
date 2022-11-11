@@ -10,6 +10,7 @@
   /* you can merge between them if you want  ** i prefer to not use it , perhaps the icon it self*/
   --white-color: #ffffff;
   /* for icons , fonts and any small things */
+  --error-color: rgba(255, 87, 51, 0.3);
 }
 
 /* common-screen-sizes-for-responsive-web-design*/
@@ -29,7 +30,7 @@ body {
     padding: 0;
 }
 
-
+label,
 h1,
 h2,
 h3,
@@ -39,12 +40,12 @@ a,
 p,
 span,
 svg {
-  font-family: "Roboto Mono", monospace;
-  font-weight: 400;
-  text-align: center;
-  color: white;
-  margin-top: 0;
-  margin-bottom: 0;
+    font-family: 'Signika Negative', sans-serif;
+    font-weight: 400 !important;
+    color: white;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
   /* line-height: normal !important; */
 
 }

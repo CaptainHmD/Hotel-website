@@ -9,8 +9,8 @@
   --second-icon-background-color: #c49450;
   /* you can merge between them if you want  ** i prefer to not use it , perhaps the icon it self*/
   --white-color: #ffffff;
-  --carousel-indicator-width: 100px;
   /* for icons , fonts and any small things */
+  --error-color: rgba(255, 87, 51, 0.3);
 }
 
 /* common-screen-sizes-for-responsive-web-design*/
@@ -41,12 +41,12 @@ a,
 p,
 span,
 svg {
-  font-family: "Roboto Mono", monospace;
-  font-weight: 400;
-  color: white;
-  text-align: center;
-  margin-top: 0;
-  margin-bottom: 0;
+    font-family: 'Signika Negative', sans-serif;
+    font-weight: 400 !important;
+    color: white;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
   /* line-height: normal !important; */
 
 }

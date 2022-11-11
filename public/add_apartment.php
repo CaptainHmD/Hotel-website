@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/add_apartment.css">
+    <link rel="stylesheet" href="css/add_apartment.css">
     <title>Post a new apartment</title>
 </head>
 <body>
@@ -15,7 +15,7 @@
     <div class="container parent-cont">
         <div class="row justify-content-center parent-row">
             <div class="col-sm-8 parent-col">
-                <form action="/add_apartment.php" method="POST" enctype="multipart/form-data" id="apartment_form" class="container my-cont" onsubmit="DoSubmit()">
+                <form action="/add_apartment.php" method="POST" enctype="multipart/form-data" id="apartment_form" class="container my-cont">
                     <div class="form-fields-wrapper">
                         <div class="form-row justify-content-center my-row">
                             <div class='col-12 my-col text-center'>
@@ -50,43 +50,43 @@
                         </div>
 
                         <div class="form-row row justify-content-center my-row">
-                            <div class='col-sm-6 my-col'>
+                            <div class='col-md-6 my-col'>
                                 <div class="mb-3">
                                     <label for="length" class="form-label">Apartment length (meters)</label>
-                                    <input type="number" name="length" class="form-control add_form_field" id="length" min=10>
+                                    <input type="number" name="length" class="form-control add_form_field" id="length" min=10 max=1000>
                                 </div>
                             </div>
-                            <div class='col-sm-6 my-col'>
+                            <div class='col-md-6 my-col'>
                                 <div class="mb-3">
                                     <label for="width" class="form-label">Apartment width (meters)</label>
-                                    <input type="number" name="width" class="form-control add_form_field" id="width" min=10>
+                                    <input type="number" name="width" class="form-control add_form_field" id="width" min=10 max=1000>
                                 </div>
                             </div>
                         </div>
 
                         <div class="form-row row justify-content-center my-row">
-                            <div class='col-sm-6 my-col'>
+                            <div class='col-md-6 my-col'>
                                 <div class="mb-3">
                                     <label for="rooms" class="form-label">Number of rooms</label>
-                                    <input type="number" name="rooms" class="form-control add_form_field" id="rooms" min=1>
+                                    <input type="number" name="rooms" class="form-control add_form_field" id="rooms" min=1 max=50>
                                 </div>
                             </div>
-                            <div class='col-sm-6 my-col'>
+                            <div class='col-md-6 my-col'>
                                 <div class="mb-3">
                                     <label for="bathrooms" class="form-label">Number of bathrooms</label>
-                                    <input type="number" name="bathrooms" class="form-control add_form_field" id="bathrooms" min=1>
+                                    <input type="number" name="bathrooms" class="form-control add_form_field" id="bathrooms" min=0 max=50>
                                 </div>
                             </div>
                         </div>
 
                         <div class="form-row row justify-content-center my-row">
-                            <div class='col-sm-6 my-col'>
+                            <div class='col-md-6 my-col'>
                                 <div class="mb-3">
                                     <label for="price" class="form-label">Apartment price per month</label>
                                     <input type="number" name="price" class="form-control add_form_field" id="price" min=1>
                                 </div>
                             </div>
-                            <div class='col-sm-6 my-col'>
+                            <div class='col-md-6 my-col'>
                                 <div class="mb-3">
                                     <div class="mb-3">
                                         <label for="apartment_images" class="form-label">Apartment images</label>
@@ -130,5 +130,6 @@
     
     <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<script src="js/ammar.js"></script>
 </body>
 </html>

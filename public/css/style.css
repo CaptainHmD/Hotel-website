@@ -423,36 +423,6 @@ margin-bottom: 10vh;
   padding: 0;
 } */
 
-
-.footer{
-  color: white;
-  background-color: var(--background-color);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 6%;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  z-index: 999;
-  border-top: var(--second-icon-background-color) 3px solid;
-}
-
-.d-flex-with-gap{
-  display: flex;
-  gap: 4%;
-}
-.d-flex-with-gap > h6{
-  white-space: nowrap;
-}
-.d-flex-with-gap:nth-child(2)::before{
-  content: "";
-  width: 20%;
-}
-.d-flex-with-gap > h6{
-  font-size: 1rem;
-}
 @media only screen and (max-width: 1000px) {
   .title-text-section {
     width: 45%;
@@ -471,12 +441,6 @@ margin-bottom: 10vh;
   }
   
 }
-@media only screen and (max-width: 900px) {
-  .d-flex-with-gap > h6{
-    font-size: 0.9rem;
-  }
-
-}
 
 @media only screen and (max-width: 800px) {
   .title-text-section {
@@ -494,31 +458,7 @@ margin-bottom: 10vh;
     width: 110%;
     /* height: 60vh; */
   }
-  .d-flex-with-gap > h6{
-    font-size: 0.70rem;
-    font-weight: 700;
-  }
 
-}
-
-@media only screen and (max-width: 700px) {
-  .d-flex-with-gap:nth-child(2)::before{
-    content: none;
-    width: 0%;
-  }
-  .d-flex-with-gap {
-    font-size: 0.9rem;
-    display: grid;
-    grid-template-columns: repeat(2,2fr);
-  }
-
-  .footer{
-    height: 10%;
-  }
-
-  .ps-5 {
-    padding-left: 0rem!important;
-}
 }
 
 @media only screen and (max-width: 650px) {
@@ -547,7 +487,6 @@ margin-bottom: 10vh;
   .text-size{
     font-size: 2.6vw !important;
   }
- 
 }
 
 @media only screen and (max-width: 596px) {
@@ -583,10 +522,6 @@ margin-bottom: 10vh;
   
   .img-view {
     gap: 3vh;
-  }
-
-  .d-flex-with-gap > h6{
-    font-size: 0.6rem;
   }
 }
 

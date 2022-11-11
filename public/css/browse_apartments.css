@@ -9,8 +9,8 @@
   --second-icon-background-color: #c49450;
   /* you can merge between them if you want  ** i prefer to not use it , perhaps the icon it self*/
   --white-color: #ffffff;
-  --carousel-indicator-width: 100px;
   /* for icons , fonts and any small things */
+  --error-color: rgba(255, 87, 51, 0.3);
 }
 
 /* common-screen-sizes-for-responsive-web-design*/
@@ -41,12 +41,12 @@ a,
 p,
 span,
 svg {
-  font-family: "Roboto Mono", monospace;
-  font-weight: 400;
-  color: white;
-  text-align: center;
-  margin-top: 0;
-  margin-bottom: 0;
+    font-family: 'Signika Negative', sans-serif;
+    font-weight: 400 !important;
+    color: white;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
   /* line-height: normal !important; */
 
 }
@@ -172,3 +172,44 @@ a {
         width: 47% !important;
     } 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+    color: white;
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 6%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    border-top: var(--second-icon-background-color) 3px solid;
+  }
+  
+  .d-flex-with-gap{
+    display: flex;
+    gap: 4%;
+  }
+  .d-flex-with-gap > h6{
+    white-space: nowrap;
+  }
+  .d-flex-with-gap:nth-child(2)::before{
+    content: "";
+    width: 20%;
+  }
+  .d-flex-with-gap > h6{
+    font-size: 1rem;
+  }
