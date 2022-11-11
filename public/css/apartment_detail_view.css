@@ -151,9 +151,6 @@ a {
     color: var(--white-color);
 }
 
-.description {
-    margin-left: 8px;
-}
 
 .info-col {
     /* background-color: var(--second-icon-background-color);

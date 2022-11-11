@@ -83,7 +83,7 @@
                             <hr class="separator-hr">
                         </div>
                         <div class="col-11 my-col info-col non-padded-col description-info-col">
-                            <p class="description left-aligned-text">a modern apartment that has a nice beach view with all the necessary utilities</p>
+                            <p class="description left-aligned-text">Altihut is opening a new chapter in development of the adventure tourism in Georgia. It is aimed to make tracking, hiking and mountaineering accessible and attractive in Caucasus Region to bigger audience then it is today. By constructing the HUT named AltiHut 3.014, Company Altitude is offering exceptional, professional and flexible services to our guests in a sustainable, innovative and environmentally friendly way;</p>
                         </div>
                     </div>
 
