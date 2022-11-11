@@ -324,7 +324,15 @@
         <!-- <article></article>
         <article></article>
         <article></article> -->
-        <div style="margin-bottom: 10vh;"></div>
+        <div style="margin-bottom: 10vh;" ></div>
+
+        <!-- footer -->
+            <div class="footer">
+                <div class="col-6 d-flex-with-gap"><h6>	&copy; 2022 WP Hotel</h6> <h6>Privacy</h6> <h6>Terms</h6> <h6>Sitemap</h6> <h6>Destinations</h6></div>
+                <div class="col-5 d-flex-with-gap ps-5"> <h6>&#9728; English (US)</h6> <h6>SR
+                    SAR</h6> <h6><a href="https://github.com/CaptainHmD/Hotel-website"><img src="../resources/icons/code-2-16.png"   alt=""> &nbsp;source code</a></h6></div>
+            </div>
+            <!-- footer end -->
     </main>
 
     <script src="../js/script.js"></script>
