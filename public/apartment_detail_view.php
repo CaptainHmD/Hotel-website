@@ -76,14 +76,19 @@
                         </div>
                     </div>
 
+                    
+
                     <div class="row content-row justify-content-start my-row">
+                        <div class="col-10 my-col non-padded-col info-col separator-hr-col">
+                            <hr class="separator-hr">
+                        </div>
                         <div class="col-11 my-col info-col non-padded-col description-info-col">
                             <p class="description left-aligned-text">a modern apartment that has a nice beach view with all the necessary utilities</p>
                         </div>
                     </div>
 
-                    <div class="row content-row justify-content-start my-row">
-                        <div class="col-11 my-col info-col non-padded-col">
+                    <div class="row content-row justify-content-start my-row rating-btn-row">
+                        <div class="col-11 my-col info-col non-padded-col rating-btn-col">
                             <button type="button" class="btn btn-primary rating-btn" data-bs-toggle="modal" data-bs-target="#rating-modal">
                                 Leave a rating
                             </button>
@@ -93,17 +98,17 @@
                                 <div class="modal-dialog modal-dialog-centered">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h1 class="modal-title fs-5 rating-modal-label" id="rating-modal-label">Rate this apartment</h1>
+                                            <h1 class="modal-title fs-5 rating-modal-label modal-text" id="rating-modal-label">Rate this apartment</h1>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
                                     <div class="modal-body">
                                         <form>
                                             <div class="mb-3">
-                                                <label for="message-text" class="col-form-label">Comment</label>
+                                                <label for="message-text" class="col-form-label modal-text">Comment</label>
                                                 <textarea class="form-control modal-text-area" id="message-text" placeholder="it was a nice stay..."></textarea>
                                             </div>
                                             <div class="mb-3">
-                                                <label for="customRange2" class="form-label">rating</label>
+                                                <label for="customRange2" class="form-label modal-text">rating</label>
                                                 <input type="range" class="form-range" min="1" max="10" step="1" value="5" id="customRange2" oninput="this.nextElementSibling.value = this.value">
                                                 <output>5</output>
                                             </div>
@@ -120,6 +125,106 @@
                                 </div>
                             </div>
 
+                        </div>
+                    </div>
+
+                    <div class="row content-row justify-content-start my-row main-separator-row">
+                        <div class="col-12 my-col non-padded-col info-col separator-hr-col">
+                            <hr class="separator-hr">
+                        </div>
+                    </div>
+
+                    <div class="row content-row justify-content-start user-comments-row my-row">
+                        <div class="col-md-5 my-col non-padded-col user-feedback-wrapper-col">
+                            <div class="container-fluid user-feedback-cont my-cont">
+                                <div class="row justify-content-start user-feedback-row my-row">
+                                    <div class="col-3 user-feedback-col user-feedback-col-small non-padded-col margined-info my-col">
+                                            <p class="left-aligned-text">Hamad</p>
+                                    </div>
+                                    <div class="col-3 user-feedback-col user-feedback-col-small non-padded-col my-col">
+                                            <p class="left-aligned-text">2 days ago</p>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-start user-feedback-row my-row">
+                                    <div class="col-3 user-feedback-col user-feedback-col-small non-padded-col my-col">
+                                            <p class="left-aligned-text">9.5</p>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-start user-feedback-row my-row">
+                                    <div class="col-12 user-feedback-col non-padded-col my-col">
+                                            <p class="left-aligned-text">it was the best apartment iv'e ever been to in my life</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-5 my-col non-padded-col user-feedback-wrapper-col">
+                            <div class="container-fluid user-feedback-cont my-cont">
+                                <div class="row justify-content-start user-feedback-row my-row">
+                                    <div class="col-3 user-feedback-col user-feedback-col-small non-padded-col margined-info my-col">
+                                            <p class="left-aligned-text">Ammar</p>
+                                    </div>
+                                    <div class="col-3 user-feedback-col user-feedback-col-small non-padded-col my-col">
+                                            <p class="left-aligned-text">1 month ago</p>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-start user-feedback-row my-row">
+                                    <div class="col-3 user-feedback-col user-feedback-col-small non-padded-col my-col">
+                                            <p class="left-aligned-text">1.2</p>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-start user-feedback-row my-row">
+                                    <div class="col-12 user-feedback-col non-padded-col my-col">
+                                            <p class="left-aligned-text">worst apartment ever.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dolor enim, posuere et quam at, luctus lacinia mi. Nunc fermentum molestie magna sed tristique.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-5 my-col non-padded-col user-feedback-wrapper-col">
+                            <div class="container-fluid user-feedback-cont my-cont">
+                                <div class="row justify-content-start user-feedback-row my-row">
+                                    <div class="col-3 user-feedback-col user-feedback-col-small non-padded-col margined-info my-col">
+                                            <p class="left-aligned-text">Homsi</p>
+                                    </div>
+                                    <div class="col-3 user-feedback-col user-feedback-col-small non-padded-col my-col">
+                                            <p class="left-aligned-text">1 year ago</p>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-start user-feedback-row my-row">
+                                    <div class="col-3 user-feedback-col user-feedback-col-small non-padded-col my-col">
+                                            <p class="left-aligned-text">5.5</p>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-start user-feedback-row my-row">
+                                    <div class="col-12 user-feedback-col non-padded-col my-col">
+                                            <p class="left-aligned-text">يعني نص ونص.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-5 my-col non-padded-col user-feedback-wrapper-col">
+                            <div class="container-fluid user-feedback-cont my-cont">
+                                <div class="row justify-content-start user-feedback-row my-row">
+                                    <div class="col-3 user-feedback-col user-feedback-col-small non-padded-col margined-info my-col">
+                                            <p class="left-aligned-text">Ahmad</p>
+                                    </div>
+                                    <div class="col-3 user-feedback-col user-feedback-col-small non-padded-col my-col">
+                                            <p class="left-aligned-text">1 moth ago</p>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-start user-feedback-row my-row">
+                                    <div class="col-3 user-feedback-col user-feedback-col-small non-padded-col my-col">
+                                            <p class="left-aligned-text">9.5</p>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-start user-feedback-row my-row">
+                                    <div class="col-12 user-feedback-col non-padded-col my-col">
+                                            <p class="left-aligned-text">very good. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dolor enim, posuere et quam at, luctus lacinia mi. Nunc fermentum molestie magna sed tristique.</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
