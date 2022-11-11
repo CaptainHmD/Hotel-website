@@ -12,6 +12,7 @@
     <div class="container-fluid parent-cont my-cont">
         <div class="row cards-row justify-content-between my-row">
             <div class="col-md-4 col-md-4-card col-sm-5 col-sm-5-card col-lg-3 col-lg-3-card card-col my-col">
+                <a href="http://172.104.152.80:5001/apartment_detail_view.php">
                 <div class="container-fluid card-inner-cont my-cont">
                     <div class="row card-inner-row card-carousel-row my-row">
                         <div class="col-12 card-inner-col my-col">
@@ -64,9 +65,11 @@
                     </div>
 
                 </div>
+                </a>
             </div>
             
             <div class="col-md-4 col-md-4-card col-sm-5 col-sm-5-card col-lg-3 col-lg-3-card card-col my-col">
+            <a href="http://172.104.152.80:5001/apartment_detail_view.php">
                 <div class="container-fluid card-inner-cont my-cont">
                     <div class="row card-inner-row card-carousel-row my-row">
                         <div class="col-12 card-inner-col my-col">
@@ -119,9 +122,11 @@
                     </div>
 
                 </div>
+            </a>
             </div>
 
             <div class="col-md-4 col-md-4-card col-sm-5 col-sm-5-card col-lg-3 col-lg-3-card card-col my-col">
+            <a href="http://172.104.152.80:5001/apartment_detail_view.php">
                 <div class="container-fluid card-inner-cont my-cont">
                     <div class="row card-inner-row card-carousel-row my-row">
                         <div class="col-12 card-inner-col my-col">
@@ -174,9 +179,11 @@
                     </div>
 
                 </div>
+            </a>
             </div>
 
             <div class="col-md-4 col-md-4-card col-sm-5 col-sm-5-card col-lg-3 col-lg-3-card card-col my-col">
+            <a href="http://172.104.152.80:5001/apartment_detail_view.php">
                 <div class="container-fluid card-inner-cont my-cont">
                     <div class="row card-inner-row card-carousel-row my-row">
                         <div class="col-12 card-inner-col my-col">
@@ -229,9 +236,11 @@
                     </div>
 
                 </div>
+            </a>
             </div>
 
             <div class="col-md-4 col-md-4-card col-sm-5 col-sm-5-card col-lg-3 col-lg-3-card card-col my-col">
+            <a href="http://172.104.152.80:5001/apartment_detail_view.php">
                 <div class="container-fluid card-inner-cont my-cont">
                     <div class="row card-inner-row card-carousel-row my-row">
                         <div class="col-12 card-inner-col my-col">
@@ -284,6 +293,7 @@
                     </div>
 
                 </div>
+            </a>
             </div>
 
         </div>

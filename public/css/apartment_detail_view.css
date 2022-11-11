@@ -4,7 +4,7 @@
 
 :root {
   --background-color: #212325;
-  --main-icon-background-color: rgb(20 20 20);
+  --main-icon-background-color: rgb(39, 39, 39);
   /* you can merge between them if you want , i prefer to use it*/
   --second-icon-background-color: #c49450;
   /* you can merge between them if you want  ** i prefer to not use it , perhaps the icon it self*/
@@ -120,6 +120,10 @@ a {
     text-align: start;
 }
 
+.price-row {
+    margin-top: 10px;
+}
+
 .address {
     overflow: auto;
 }
@@ -139,10 +143,10 @@ a {
 }
 
 .description-info-col {
-    min-height: 100px;
+    /* min-height: 100px;
     background-color: var(--main-icon-background-color);
     border-radius: 4px;
-    border: 1px solid;
+    border: 1px solid; */
     border-color: var(--second-icon-background-color);
     color: var(--white-color);
 }
@@ -157,8 +161,8 @@ a {
     margin-bottom: 10px;
 }
 
-.rating-modal-label {
-    color: var(--main-icon-background-color);
+.rating-btn-col {
+    width: auto;
 }
 
 .rating-btn {
@@ -192,7 +196,7 @@ a {
 }
 
 .modal-content {
-    background-color: rgb(255, 255, 255, 0.6);
+    background-color: rgba(41, 41, 41, 0.6);
 }
 
 .modal-text-area {
@@ -202,11 +206,44 @@ a {
     color: var(--second-icon-background-color);
 }
 
+.modal-text {
+    color: var(--second-icon-background-color);
+}
+
 .modal-text-area:focus {
     border: 1px solid;
     border-color: var(--second-icon-background-color);
     background-color: var(--main-icon-background-color);
     color: var(--second-icon-background-color);
+}
+
+.separator-hr-col {
+    height: auto;
+    margin-bottom: 0px;
+}
+
+.separator-hr {
+    color: var(--second-icon-background-color);
+    height: 1px;
+    margin: 0px;
+}
+
+.rating-btn-row {
+    margin-top: 20px;
+}
+
+.main-separator-row {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.user-feedback-col-small {
+    width: auto;
+}
+
+.user-feedback-wrapper-col {
+    margin-right: 30px;
+    margin-bottom: 40px;
 }
 
 
