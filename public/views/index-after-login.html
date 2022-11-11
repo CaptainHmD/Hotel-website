@@ -38,12 +38,12 @@
 
                 <button class="btn  btn-secondary dropdown-toggle dropdown-btn" type="button" data-bs-toggle="dropdown"
                     aria-expanded="false">
-                    Fast Travel
+                    Site Pages
                 </button>
                 <ul class="dropdown-menu">
-                    <li><a href="#home-travel" class="dropdown-item">home-travel</a></li>
-                    <li><a href="#our-services-wrapper" class="dropdown-item">services-travel</a></li>
-                    <li><a href="#img-tr" class="dropdown-item">img-travel</a></li>
+                    <li><a href="http://172.104.152.80:5001/add_apartment.php" class="dropdown-item">Add Apartment</a></li>
+                    <li><a href="http://172.104.152.80:5001/browse_apartments.php" class="dropdown-item">Browse Apartments</a></li>
+                    <!-- <li><a href="#img-tr" class="dropdown-item">img-travel</a></li> -->
                 </ul>
 
             </div>
@@ -51,12 +51,12 @@
 
         <div class="nav-section" id="register-section">
             <h1>
-                <a href="/register" id="register-text" class="nav-text">Sign Up</a>
+                <a href="/register" id="register-text" class="nav-text">Logout</a>
             </h1>
         </div>
         <div class="nav-section" id="login-logout-section">
             <a href="">
-                <h2 class="nav-text">Login</h2>
+                <h2 class="nav-text">User name</h2>
             </a>
         </div>
     </nav>
