@@ -31,6 +31,12 @@ body {
 
 
 }
+
+.login-body{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
 * {
   box-sizing: border-box;
   margin: 0;
