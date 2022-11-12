@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hotel Information System</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hotel Information System</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style2.css">
+    
+    </head>
 
-</head>
-
-<body>
+<body class="main-body">
     <!-- <div class="container"> -->
     <nav id="navbar">
         <div class="nav-section" id="logo-section">
@@ -41,8 +41,10 @@
                     Site Pages
                 </button>
                 <ul class="dropdown-menu">
-                    <li><a href="http://172.104.152.80:5001/add_apartment.php" class="dropdown-item">Add Apartment</a></li>
-                    <li><a href="http://172.104.152.80:5001/browse_apartments.php" class="dropdown-item">Browse Apartments</a></li>
+                    <li><a href="http://172.104.152.80:5001/add_apartment.php" class="dropdown-item">Add Apartment</a>
+                    </li>
+                    <li><a href="http://172.104.152.80:5001/browse_apartments.php" class="dropdown-item">Browse
+                            Apartments</a></li>
                     <!-- <li><a href="#img-tr" class="dropdown-item">img-travel</a></li> -->
                 </ul>
 
@@ -61,9 +63,9 @@
         </div>
     </nav>
 
-    <main>
+    <main class="main-section">
 
-        <article class="main-page-view" id="home-travel">
+        <article class="main-page-view article-style" id="home-travel">
             <div id="img-full-fill">
 
                 <div class="title-text-section">
@@ -81,23 +83,203 @@
 
         <!-- <div class="article-section"></div> -->
         <!-- after main view will be our services then the text animation and img swapping -->
-        <article class="article-section" id="our-services-wrapper">
+        <article class="article-section article-style" id="our-services-wrapper">
             <div id="our-services">
                 <div class="services-title">
-                    <h2 >Our Services</h2>
+                    <h2>Our Services</h2>
                 </div>
                 <div class="services-wrapper">
-                    <div class="cards box-shadow"></div>
-                    <div class="cards box-shadow"></div>
-                    <div class="cards box-shadow"></div>
-                    <div class="cards box-shadow"></div>
-                    <div class="cards box-shadow"></div>
-                    <div class="cards box-shadow"></div>
+                    <div class="cards box-shadow">
+                        <h5 class="cards-title">Professional photography</h5>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Read More
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="Professional-Modal"
+                            aria-hidden="true">
+                            <div class="modal-dialog ">
+                                <div class="modal-content bgdcolor">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="Professional-Modal">Professional photography
+                                        </h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        A single picture tells more than a thousand words. That’s why we’ll send over
+                                        one of our professional real estate photographers to capture your home from its
+                                        best side. Expect photographs worthy of a magazine cover.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards box-shadow">
+                        <h5 class="cards-title"> price optimization</h5>
+
+                        <!-- modal; -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#price">
+                            Read More
+                        </button>
+                        <div class="modal fade" id="price" tabindex="-1" aria-labelledby="price -Modal"
+                            aria-hidden="true">
+                            <div class="modal-dialog ">
+                                <div class="modal-content bgdcolor">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="price -Modal"> price optimization
+                                        </h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Our team of pricing experts dives deep into the data to ensure your occupancy
+                                        and profit rates are fully optimised. “Never a missed opportunity” is our adage
+                                        for success. Expect best in class yield from your property in Riyadh.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- modal end  -->
+
+                    </div>
+
+
+
+
+                    <div class="cards box-shadow">
+                        <h5 class="cards-title">Guest communication</h5>
+
+                        <!-- modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Guest">
+                            Read More
+                        </button>
+                        <div class="modal fade" id="Guest" tabindex="-1" aria-labelledby="Guest-Modal"
+                            aria-hidden="true">
+                            <div class="modal-dialog ">
+                                <div class="modal-content bgdcolor">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="Guest-Modal">Guest communication
+                                        </h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        From the very first contact to constant on-site support - we’ll make sure your
+                                        home is safe, and your guests well taken care of throughout their stay. Expect
+                                        happy guests, very happy guests.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- modal end  -->
+                    </div>
+                    <div class="cards box-shadow">
+                        <h5 class="cards-title">Guest approval</h5>
+                        <!-- modal -->
+
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#approval">
+                            Read More
+                        </button>
+                        <div class="modal fade" id="approval" tabindex="-1" aria-labelledby="approval-Modal"
+                            aria-hidden="true">
+                            <div class="modal-dialog ">
+                                <div class="modal-content bgdcolor">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="approval-Modal">Guest approval
+                                        </h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        With GuestReady, your Riyadh home is in good hands. We thoroughly screen
+                                        potential guests to ensure only the most reputable guests will be staying in
+                                        your home.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- modal end  -->
+                    </div>
+
+
+
+                    <div class="cards box-shadow">
+                        <h5 class="cards-title">Guided Check-out</h5>
+
+                        <!-- modal -->
+
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Guided">
+                            Read More
+                        </button>
+                        <div class="modal fade" id="Guided" tabindex="-1" aria-labelledby="Guided-Modal"
+                            aria-hidden="true">
+                            <div class="modal-dialog ">
+                                <div class="modal-content bgdcolor">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="Guided-Modal">Guided Check-out
+                                        </h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        We will aid your guests throughout the check-out process, ensuring that your
+                                        place is in order, windows and doors are locked, keys collected and your guests
+                                        ready for their onward journey. Expect best in class safety
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- modal end  -->
+                    </div>
+
+
+
+                    <div class="cards box-shadow">
+                        <h5 class="cards-title">Professional housekeeping</h5>
+                        <!-- modal -->
+
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#housekeeping">
+                            Read More
+                        </button>
+                        <div class="modal fade" id="housekeeping" tabindex="-1" aria-labelledby="housekeeping-Modal"
+                            aria-hidden="true">
+                            <div class="modal-dialog ">
+                                <div class="modal-content bgdcolor">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="housekeeping-Modal">Professional housekeeping
+                                        </h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Empowered with our team of professional housekeepers with years of experience in
+                                        hotels, GuestReady will add a touch of home, to your property. Expect an
+                                        impeccably clean place, each time.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- modal end  -->
+
+                    </div>
                 </div>
             </div>
         </article>
 
-        <article class="img-view" id="img-tr">
+        <article class="img-view article-style" id="img-tr">
             <!-- <div class="article-section" id="img-text-section"> -->
 
             <div id="text-section">
@@ -145,12 +327,34 @@
         <article></article>
         <article></article> -->
         <div style="margin-bottom: 10vh;"></div>
+
+        <!-- footer -->
+        <div class="footer">
+            <div class="col-6 d-flex-with-gap">
+                <h6> &copy; 2022 WP Hotel</h6>
+                <h6>Privacy</h6>
+                <h6>Terms</h6>
+                <h6>Sitemap</h6>
+                <h6>Destinations</h6>
+            </div>
+            <div class="col-5 d-flex-with-gap ps-5">
+                <h6>&#9728; English (US)</h6>
+                <h6>SR
+                    SAR</h6>
+                <h6><a href="https://github.com/CaptainHmD/Hotel-website"><img src="../resources/icons/code-2-16.png"
+                            alt=""> &nbsp;source code</a></h6>
+            </div>
+        </div>
+        <!-- footer end -->
     </main>
 
-    <!-- </div> -->
     <script src="../js/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+        integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
