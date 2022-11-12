@@ -9,7 +9,58 @@
     <title>View apartment</title>
 </head>
 <body>
-    <div class="container-fluid parent-cont my-cont">
+     <!-- <div class="container"> -->
+     <nav id="navbar">
+        <div class="nav-section" id="logo-section">
+            <div id="logo-wrapper"> <a href="http://172.104.152.80:5001/add_apartment.php" id="d-gap">
+                    <img id="logo" src="../resources/icons/a6c89eb25f20c37a608f1cef9ca70d24.svg" alt="">
+                    <div id="nav-text-wrapper">
+                        <h1 class="nav-text" id="hotel-nav">hotel</h1>
+                    </div>
+                </a>
+
+            </div>
+
+            <!-- must be list and reveal result on hover -->
+            <div class="dropdown">
+
+
+                <!-- <h2 class="nav-section nav-text" id="fast-travail">Fast Travel&nbsp;</h2>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-caret-down-fill" style="margin-top: 4px;white-space: nowrap;" viewBox="0 0 16 16" s>
+                    <path
+                        d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                </svg> -->
+
+                <button class="btn  btn-secondary dropdown-toggle dropdown-btn nav-text" type="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Fast Travel
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="#home-travel" class="dropdown-item">home-travel</a></li>
+                    <li><a href="#our-services-wrapper" class="dropdown-item">services-travel</a></li>
+                    <li><a href="#img-tr" class="dropdown-item">img-travel</a></li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="nav-section" id="register-section">
+            <h1>
+                <a href="/register" id="register-text" class="nav-text">Sign Up</a>
+            </h1>
+        </div>
+        <div class="nav-section" id="login-logout-section">
+            <a href="">
+                <h2 class="nav-text">Login</h2>
+            </a>
+        </div>
+    </nav>
+        <!-- end nav -->
+
+
+
+    <div class="container-fluid parent-cont apartment-detail-parent-cont my-cont">
         <div class="row parent-row justify-content-center my-row">
             <div class="col-12 parent-col-detail-view parent-col my-col">
                 <div class="container-fluid content-cont my-cont">
@@ -232,6 +283,14 @@
             </div>
         </div>
     </div>
+
+    <!-- footer -->
+    <div class="footer">
+                <div class="col-6 d-flex-with-gap"><h6>	&copy; 2022 WP Hotel</h6> <h6>Privacy</h6> <h6>Terms</h6> <h6>Sitemap</h6> <h6>Destinations</h6></div>
+                <div class="col-5 d-flex-with-gap ps-5"> <h6>&#9728; English (US)</h6> <h6>SR
+                    SAR</h6> <h6><a href="https://github.com/CaptainHmD/Hotel-website"><img src="../resources/icons/code-2-16.png"   alt=""> &nbsp;source code</a></h6></div>
+            </div>
+            <!-- footer end -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>

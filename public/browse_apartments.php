@@ -9,6 +9,56 @@
     <title>Browse apartments</title>
 </head>
 <body>
+    <!-- <div class="container"> -->
+    <nav id="navbar">
+        <div class="nav-section" id="logo-section">
+            <div id="logo-wrapper"> <a href="http://172.104.152.80:5001/add_apartment.php" id="d-gap">
+                    <img id="logo" src="../resources/icons/a6c89eb25f20c37a608f1cef9ca70d24.svg" alt="">
+                    <div id="nav-text-wrapper">
+                        <h1 class="nav-text" id="hotel-nav">hotel</h1>
+                    </div>
+                </a>
+
+            </div>
+
+            <!-- must be list and reveal result on hover -->
+            <div class="dropdown">
+
+
+                <!-- <h2 class="nav-section nav-text" id="fast-travail">Fast Travel&nbsp;</h2>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-caret-down-fill" style="margin-top: 4px;white-space: nowrap;" viewBox="0 0 16 16" s>
+                    <path
+                        d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                </svg> -->
+
+                <button class="btn  btn-secondary dropdown-toggle dropdown-btn nav-text" type="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Fast Travel
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="#home-travel" class="dropdown-item">home-travel</a></li>
+                    <li><a href="#our-services-wrapper" class="dropdown-item">services-travel</a></li>
+                    <li><a href="#img-tr" class="dropdown-item">img-travel</a></li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="nav-section" id="register-section">
+            <h1>
+                <a href="/register" id="register-text" class="nav-text">Sign Up</a>
+            </h1>
+        </div>
+        <div class="nav-section" id="login-logout-section">
+            <a href="">
+                <h2 class="nav-text">Login</h2>
+            </a>
+        </div>
+    </nav>
+        <!-- end nav -->
+
+
     <div class="container-fluid parent-cont cards-parent-cont my-cont">
         <div class="row cards-row justify-content-between my-row">
             <div class="col-md-4 col-md-4-card col-sm-5 col-sm-5-card col-lg-3 col-lg-3-card card-col non-padded-col my-col">

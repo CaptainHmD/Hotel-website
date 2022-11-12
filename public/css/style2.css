@@ -75,6 +75,7 @@ a {
   display: flex;
   width: 100%;
   border-bottom: solid 3px var(--second-icon-background-color);
+  top: 0px;
   /* height: auto; */
   height: 13%;
   background-color: rgb(0, 0, 0, 0.7);
@@ -444,7 +445,7 @@ main>.article-style {
 
 .footer {
   color: white;
-  background-color: var(--background-color);
+  background-color: rgb(0, 0, 0, 0.7);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -454,7 +455,7 @@ main>.article-style {
   bottom: 0;
   left: 0;
   z-index: 999;
-  border-top: var(--second-icon-background-color) 3px solid;
+  border-top: var(--second-icon-background-color) 1px solid;
 }
 
 .d-flex-with-gap {
@@ -678,7 +679,7 @@ main>.article-style {
 /* browse apartments */
 
 .cards-parent-cont{
-  margin-top: 70px;
+  margin-top: 120px;
   margin-bottom: 100px;
 }
 
@@ -879,6 +880,10 @@ main>.article-style {
     color: var(--white-color);
 }
 
+.add-form-parent-cont{
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
 
 
 /* end add apartments */
@@ -887,6 +892,11 @@ main>.article-style {
 
 
 /* detail apartment */
+
+.apartment-detail-parent-cont {
+  margin-top: 100px;
+}
+
 
 .content-cont {
     margin-top: 50px;
@@ -1112,3 +1122,17 @@ main>.article-style {
 }
 
 /* end detail apartment */
+
+
+/* .container-fluid {
+  border: 3px dashed red;
+}
+
+
+.my-row, .parent-row {
+  border: 3px solid rgb(24, 197, 62);
+}
+
+.my-col, .parent-col {
+  border: 3px dotted white;
+} */
