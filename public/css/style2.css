@@ -29,13 +29,22 @@ body {
   height: 100vh;
   margin: 0;
 
-
 }
 
 .login-body{
   height: 100vh;
   display: flex;
+
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+}
+.register-body{
+
+  height: 100vh;
+  display: flex;
+
+  flex-direction: column;
 }
 * {
   box-sizing: border-box;
@@ -456,12 +465,19 @@ main>.article-style {
   align-items: center;
   width: 100%;
   height: 65px;
-  position: fixed;
+  position: absolute;
   bottom: 0;
   left: 0;
   z-index: 999;
   border-top: var(--second-icon-background-color) 1px solid;
 }
+.register-body .footer{
+  position: static;
+  /* bottom: 0; */
+  /* left: 0; */
+}
+
+
 
 .d-flex-with-gap {
   display: flex;
@@ -482,6 +498,16 @@ main>.article-style {
 }
   /* footer end */
 
+  .align-check{
+    align-items: baseline;
+    gap: 4px;
+  }
+  .align-check a{
+    color: var(--second-icon-background-color);
+  }
+  .align-check a:hover{
+    color: rgb(0, 92, 200);
+  }
 @media only screen and (max-width: 1000px) {
   .title-text-section {
     width: 45%;
@@ -599,6 +625,7 @@ main>.article-style {
   }
 }
 
+
 @media only screen and (max-width: 596px) {
   /* .bi {
     margin-top: 0 !important;
@@ -662,6 +689,15 @@ main>.article-style {
 
 
 }
+
+/* for Terms and conditions  and remember me on register file */
+@media only screen and (max-width: 359px) {
+.res-text{
+  font: 0.7em sans-serif !important;
+}
+
+}
+
 
 @media only screen and (max-width: 320px) {
   .nav-text {
