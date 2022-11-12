@@ -31,7 +31,6 @@ body {
 
 
 }
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -883,6 +882,11 @@ main>.article-style {
 .add-form-parent-cont{
   margin-top: 100px;
   margin-bottom: 100px;
+}
+.checkbox-remember{
+  background-color: black;
+  color: var(--white-color);
+  border: 2px solid var(--second-icon-background-color) !important;
 }
 
 
