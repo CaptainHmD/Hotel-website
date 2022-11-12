@@ -677,8 +677,15 @@ main>.article-style {
 
 /* browse apartments */
 
+.cards-parent-cont{
+  margin-top: 70px;
+  margin-bottom: 100px;
+}
+
+
 .cards-row{
-    margin: 9px;
+    margin-left: 9px;
+    margin-right: 9px;
 }
 
 .card-col {
@@ -689,9 +696,10 @@ main>.article-style {
     height: 100%;
 }
 
-.my-col {
+/* problem */
+/* .my-col {
     padding: 0px;
-}
+} */
 
 .carousel {
     height: 100%; 
@@ -735,7 +743,7 @@ main>.article-style {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23c49450' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
 } */
 
-.carousel-indicators [data-bs-target] {
+.carousel-indicators-apartments [data-bs-target] {
     box-sizing: content-box;
     flex: 0 1 auto;
     width: 7px; 
@@ -797,9 +805,10 @@ main>.article-style {
     margin-bottom: 100px;
 }
 
-input, #description {
+/* problem */
+/* input, #description {
     border: 2px solid var(--second-icon-background-color) !important;
-}
+} */
 
 #apartment_form {
     margin-top: 30px;
@@ -812,31 +821,57 @@ input, #description {
     box-shadow: 0px 8px 20px 0px rgba(0, 0, 0);
 }
 
-label {
+/* problem */
+/* label {
     color: var(--white-color)
+} */
+
+.add_form_label{
+  color: var(--white-color)
 }
 
-.my-row {
-    margin-top: 10px;
-    margin-bottom: 10px;
+/* problem */
+/* .my-row {
+  margin-top: 10px;
+  margin-bottom: 10px;
+} */
+
+.add_apartment_margined_row {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-
-input[type="submit"] {
+/* problem */
+/* input[type="submit"] {
     background-color: var(--second-icon-background-color);
+} */
+
+.add_app_submit {
+  border: 2px solid var(--second-icon-background-color) !important;
+  background-color: var(--second-icon-background-color);
 }
 
-input[type="submit"]:hover {
+/* problem */
+/* input[type="submit"]:hover {
     background-color: #d1851b;
     border: 1px solid var(--white-color) !important;
     -webkit-box-shadow: 0px 8px 20px 0px var(--second-icon-background-color);
     -moz-box-shadow: 0px 8px 20px 0px var(--second-icon-background-color);
     box-shadow: 2px 3px 20px 0px var(--second-icon-background-color);
+} */
+
+.add_app_submit:hover {
+  background-color: #d1851b;
+  border: 1px solid var(--white-color) !important;
+  -webkit-box-shadow: 0px 8px 20px 0px var(--second-icon-background-color);
+  -moz-box-shadow: 0px 8px 20px 0px var(--second-icon-background-color);
+  box-shadow: 2px 3px 20px 0px var(--second-icon-background-color);
 }
 
 .add_form_field {
     background-color: black;
     color: var(--white-color);
+    border: 2px solid var(--second-icon-background-color) !important;
 }
 
 .add_form_field:focus {
@@ -872,7 +907,6 @@ input[type="submit"]:hover {
     padding: 0px;
 }
 
-
 .detail-image {
     height: 100%;
     width: 100%;
@@ -904,11 +938,11 @@ input[type="submit"]:hover {
     text-align: start;
 }
 
-.price-row {
+.price-row-detail-view {
     margin-top: 10px;
 }
 
-.address {
+.address-detail-view {
     overflow: auto;
 }
 
@@ -931,6 +965,8 @@ input[type="submit"]:hover {
     background-color: var(--main-icon-background-color);
     border-radius: 4px;
     border: 1px solid; */
+
+
     border-color: var(--second-icon-background-color);
     color: var(--white-color);
 }
@@ -939,6 +975,8 @@ input[type="submit"]:hover {
 .info-col {
     /* background-color: var(--second-icon-background-color);
     border-radius: 5px; */
+
+
     margin-bottom: 10px;
 }
 
@@ -972,7 +1010,7 @@ input[type="submit"]:hover {
     border-color: var(--main-icon-background-color);
 }
 
-.modal {
+.modal-detail-view {
     background-color: rgb(33, 35, 37, 0.3);
 }
 
@@ -1036,7 +1074,7 @@ input[type="submit"]:hover {
         margin-left: 6px;
     }
 
-    .parent-col {
+    .parent-col-detail-view {
         padding-left: 80px;
         padding-right: 80px;
     }

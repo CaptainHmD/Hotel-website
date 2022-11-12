@@ -17,7 +17,7 @@
             <div class="col-sm-8 parent-col">
                 <form action="/add_apartment.php" method="POST" enctype="multipart/form-data" id="apartment_form" class="container my-cont">
                     <div class="form-fields-wrapper">
-                        <div class="form-row justify-content-center my-row">
+                        <div class="form-row justify-content-center add_apartment_margined_row my-row">
                             <div class='col-12 my-col text-center'>
                                 <h1 id="form-title">
                                     Post a new apartment
@@ -25,82 +25,82 @@
                             </div>
                         </div>
 
-                        <div class="form-row row justify-content-center my-row">
+                        <div class="form-row row justify-content-center add_apartment_margined_row my-row">
                             <div class='col-sm-6 my-col'>
                                 <div class="mb-3">
-                                    <label for="country" class="form-label">Apartment country</label>
-                                    <input type="text" name="country" class="form-control add_form_field" id="country" placeholder="Saudi Arabia">
+                                    <label for="country_add_form" class="form-label add_form_label">Apartment country</label>
+                                    <input type="text" name="country" class="form-control add_form_field" id="country_add_form" placeholder="Saudi Arabia">
                                 </div>
                             </div>
                             <div class='col-sm-6 my-col'>
                                 <div class="mb-3">
-                                <label for="city" class="form-label">Apartment city</label>
-                                    <input type="text" name="city" class="form-control add_form_field" id="city" placeholder="Makkah">
+                                <label for="city_add_form" class="form-label add_form_label">Apartment city</label>
+                                    <input type="text" name="city" class="form-control add_form_field" id="city_add_form" placeholder="Makkah">
                                 </div>
                             </div>
                         </div>
 
-                        <div class="form-row row justify-content-center my-row">
+                        <div class="form-row row justify-content-center add_apartment_margined_row my-row">
                             <div class='col-12 my-col'>
                                 <div class="mb-3">
-                                    <label for="address" class="form-label">Apartment Address</label>
-                                    <input type="text" name="address" class="form-control add_form_field" id="address" placeholder="Annuzha, Alqadi street, building 444...">
+                                    <label for="address_add_form" class="form-label add_form_label">Apartment Address</label>
+                                    <input type="text" name="address" class="form-control add_form_field" id="address_add_form" placeholder="Annuzha, Alqadi street, building 444...">
                                 </div>
                             </div>
                         </div>
 
-                        <div class="form-row row justify-content-center my-row">
+                        <div class="form-row row justify-content-center add_apartment_margined_row my-row">
                             <div class='col-md-6 my-col'>
                                 <div class="mb-3">
-                                    <label for="length" class="form-label">Apartment length (meters)</label>
-                                    <input type="number" name="length" class="form-control add_form_field" id="length" min=10 max=1000>
+                                    <label for="length_add_form" class="form-label add_form_label">Apartment length (meters)</label>
+                                    <input type="number" name="length" class="form-control add_form_field" id="length_add_form" min=10 max=1000>
                                 </div>
                             </div>
                             <div class='col-md-6 my-col'>
                                 <div class="mb-3">
-                                    <label for="width" class="form-label">Apartment width (meters)</label>
-                                    <input type="number" name="width" class="form-control add_form_field" id="width" min=10 max=1000>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-row row justify-content-center my-row">
-                            <div class='col-md-6 my-col'>
-                                <div class="mb-3">
-                                    <label for="rooms" class="form-label">Number of rooms</label>
-                                    <input type="number" name="rooms" class="form-control add_form_field" id="rooms" min=1 max=50>
-                                </div>
-                            </div>
-                            <div class='col-md-6 my-col'>
-                                <div class="mb-3">
-                                    <label for="bathrooms" class="form-label">Number of bathrooms</label>
-                                    <input type="number" name="bathrooms" class="form-control add_form_field" id="bathrooms" min=0 max=50>
+                                    <label for="width_add_form" class="form-label add_form_label">Apartment width (meters)</label>
+                                    <input type="number" name="width" class="form-control add_form_field" id="width_add_form" min=10 max=1000>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="form-row row justify-content-center my-row">
+                        <div class="form-row row justify-content-center add_apartment_margined_row my-row">
                             <div class='col-md-6 my-col'>
                                 <div class="mb-3">
-                                    <label for="price" class="form-label">Apartment price per month</label>
-                                    <input type="number" name="price" class="form-control add_form_field" id="price" min=1>
+                                    <label for="rooms_add_form" class="form-label add_form_label">Number of rooms</label>
+                                    <input type="number" name="rooms" class="form-control add_form_field" id="rooms_add_form" min=1 max=50>
+                                </div>
+                            </div>
+                            <div class='col-md-6 my-col'>
+                                <div class="mb-3">
+                                    <label for="bathrooms_add_form" class="form-label add_form_label">Number of bathrooms</label>
+                                    <input type="number" name="bathrooms" class="form-control add_form_field" id="bathrooms_add_form" min=0 max=50>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-row row justify-content-center add_apartment_margined_row my-row">
+                            <div class='col-md-6 my-col'>
+                                <div class="mb-3">
+                                    <label for="price_add_form" class="form-label add_form_label">Apartment price per month</label>
+                                    <input type="number" name="price" class="form-control add_form_field" id="price_add_form" min=1>
                                 </div>
                             </div>
                             <div class='col-md-6 my-col'>
                                 <div class="mb-3">
                                     <div class="mb-3">
-                                        <label for="apartment_images" class="form-label">Apartment images</label>
-                                        <input class="form-control add_form_field" type="file" id="apartment_images" name="apartment_images" accept="image/png, image/jpeg, image/jpg" multiple>
+                                        <label for="apartment_images_add_form" class="form-label add_form_label">Apartment images</label>
+                                        <input class="form-control add_form_field" type="file" id="apartment_images_add_form" name="apartment_images" accept="image/png, image/jpeg, image/jpg" multiple>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="form-row row justify-content-center my-row">
+                        <div class="form-row row justify-content-center add_apartment_margined_row my-row">
                             <div class='col-sm-10 my-col'>
                                 <div class="mb-3">
-                                    <label for="description" class="form-label">Apartment description</label>
-                                    <textarea name="description" class="form-control add_form_field" id="description" cols="60" rows="5" placeholder="A modern apartment with a beach view..."></textarea>
+                                    <label for="description_add_form" class="form-label add_form_label">Apartment description</label>
+                                    <textarea name="description" class="form-control add_form_field" id="description_add_form" cols="60" rows="5" placeholder="A modern apartment with a beach view..."></textarea>
                                 </div>
                             </div>
                         </div>
@@ -114,10 +114,10 @@
                             </div>
                         </div> -->
 
-                        <div class="form-row row justify-content-center my-row">
+                        <div class="form-row row justify-content-center add_apartment_margined_row my-row">
                             <div class='col-sm-5 my-col'>
                                 <div class="mb-3">
-                                    <input type="submit" name="submit" value="submit" id="submit" class="form-control">
+                                    <input type="submit" name="submit" value="submit" id="submit_add_form" class="form-control add_app_submit">
                                 </div>
                             </div>
                         </div>

@@ -9,15 +9,15 @@
     <title>Browse apartments</title>
 </head>
 <body>
-    <div class="container-fluid parent-cont my-cont">
+    <div class="container-fluid parent-cont cards-parent-cont my-cont">
         <div class="row cards-row justify-content-between my-row">
-            <div class="col-md-4 col-md-4-card col-sm-5 col-sm-5-card col-lg-3 col-lg-3-card card-col my-col">
+            <div class="col-md-4 col-md-4-card col-sm-5 col-sm-5-card col-lg-3 col-lg-3-card card-col non-padded-col my-col">
                 <a href="http://172.104.152.80:5001/apartment_detail_view.php">
                 <div class="container-fluid card-inner-cont my-cont">
                     <div class="row card-inner-row card-carousel-row my-row">
-                        <div class="col-12 card-inner-col my-col">
+                        <div class="col-12 card-inner-col non-padded-col my-col">
                             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-                                <div class="carousel-indicators">
+                                <div class="carousel-indicators carousel-indicators-apartments">
                                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
@@ -46,20 +46,20 @@
                     </div>
 
                     <div class="row card-inner-row my-row">
-                        <div class="col-12 card-inner-col my-col">
+                        <div class="col-12 card-inner-col non-padded-col my-col">
                             <p class="card-address">London, UK</p>
                         </div>
                     </div>
                     <div class="row card-inner-row my-row">
-                        <div class="col-12 card-inner-col my-col">
+                        <div class="col-12 card-inner-col non-padded-col my-col">
                             <p class="card-price">1000/month</p>
                         </div>
                     </div>
                     <div class="row card-inner-row my-row">
-                        <div class="col-sm-2 card-inner-col my-col card-rating">
+                        <div class="col-sm-2 card-inner-col non-padded-col my-col card-rating">
                             <p class="card-rating">9.5</p>
                         </div>
-                        <div class="col-sm-10 card-inner-col my-col">
+                        <div class="col-sm-10 card-inner-col non-padded-col my-col">
                             <p class="card-reviews">1589 reviews</p>
                         </div>
                     </div>
@@ -68,13 +68,13 @@
                 </a>
             </div>
             
-            <div class="col-md-4 col-md-4-card col-sm-5 col-sm-5-card col-lg-3 col-lg-3-card card-col my-col">
+            <div class="col-md-4 col-md-4-card col-sm-5 col-sm-5-card col-lg-3 col-lg-3-card card-col non-padded-col my-col">
             <a href="http://172.104.152.80:5001/apartment_detail_view.php">
                 <div class="container-fluid card-inner-cont my-cont">
                     <div class="row card-inner-row card-carousel-row my-row">
-                        <div class="col-12 card-inner-col my-col">
+                        <div class="col-12 card-inner-col non-padded-col my-col">
                             <div id="carouselExampleIndicators2" class="carousel slide" data-bs-ride="true">
-                                <div class="carousel-indicators">
+                                <div class="carousel-indicators carousel-indicators-apartments">
                                     <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                                     <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1" aria-label="Slide 2"></button>
                                     <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2" aria-label="Slide 3"></button>
@@ -103,20 +103,20 @@
                     </div>
 
                     <div class="row card-inner-row my-row">
-                        <div class="col-12 card-inner-col my-col">
+                        <div class="col-12 card-inner-col non-padded-col my-col">
                             <p class="card-address">Doha, Bahrain</p>
                         </div>
                     </div>
                     <div class="row card-inner-row my-row">
-                        <div class="col-12 card-inner-col my-col">
+                        <div class="col-12 card-inner-col non-padded-col my-col">
                             <p class="card-price">2000/month</p>
                         </div>
                     </div>
                     <div class="row card-inner-row my-row">
-                        <div class="col-sm-2 card-inner-col my-col card-rating">
+                        <div class="col-sm-2 card-inner-col non-padded-col my-col card-rating">
                             <p class="card-rating">7.4</p>
                         </div>
-                        <div class="col-sm-10 card-inner-col my-col">
+                        <div class="col-sm-10 card-inner-col non-padded-col my-col">
                             <p class="card-reviews">1054 reviews</p>
                         </div>
                     </div>
@@ -125,13 +125,13 @@
             </a>
             </div>
 
-            <div class="col-md-4 col-md-4-card col-sm-5 col-sm-5-card col-lg-3 col-lg-3-card card-col my-col">
+            <div class="col-md-4 col-md-4-card col-sm-5 col-sm-5-card col-lg-3 col-lg-3-card card-col non-padded-col my-col">
             <a href="http://172.104.152.80:5001/apartment_detail_view.php">
                 <div class="container-fluid card-inner-cont my-cont">
                     <div class="row card-inner-row card-carousel-row my-row">
-                        <div class="col-12 card-inner-col my-col">
+                        <div class="col-12 card-inner-col non-padded-col my-col">
                             <div id="carouselExampleIndicators3" class="carousel slide" data-bs-ride="true">
-                                <div class="carousel-indicators">
+                                <div class="carousel-indicators carousel-indicators-apartments">
                                     <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                                     <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="1" aria-label="Slide 2"></button>
                                     <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="2" aria-label="Slide 3"></button>
@@ -160,20 +160,20 @@
                     </div>
 
                     <div class="row card-inner-row my-row">
-                        <div class="col-12 card-inner-col my-col">
+                        <div class="col-12 card-inner-col non-padded-col my-col">
                             <p class="card-address">Barcelona, Spain</p>
                         </div>
                     </div>
                     <div class="row card-inner-row my-row">
-                        <div class="col-12 card-inner-col my-col">
+                        <div class="col-12 card-inner-col non-padded-col my-col">
                             <p class="card-price">1200/month</p>
                         </div>
                     </div>
                     <div class="row card-inner-row my-row">
-                        <div class="col-sm-2 card-inner-col my-col card-rating">
+                        <div class="col-sm-2 card-inner-col non-padded-col my-col card-rating">
                             <p class="card-rating">8.1</p>
                         </div>
-                        <div class="col-sm-10 card-inner-col my-col">
+                        <div class="col-sm-10 card-inner-col non-padded-col my-col">
                             <p class="card-reviews">24591 reviews</p>
                         </div>
                     </div>
@@ -182,13 +182,13 @@
             </a>
             </div>
 
-            <div class="col-md-4 col-md-4-card col-sm-5 col-sm-5-card col-lg-3 col-lg-3-card card-col my-col">
+            <div class="col-md-4 col-md-4-card col-sm-5 col-sm-5-card col-lg-3 col-lg-3-card card-col non-padded-col my-col">
             <a href="http://172.104.152.80:5001/apartment_detail_view.php">
                 <div class="container-fluid card-inner-cont my-cont">
                     <div class="row card-inner-row card-carousel-row my-row">
-                        <div class="col-12 card-inner-col my-col">
+                        <div class="col-12 card-inner-col non-padded-col my-col">
                             <div id="carouselExampleIndicators4" class="carousel slide" data-bs-ride="true">
-                                <div class="carousel-indicators">
+                                <div class="carousel-indicators carousel-indicators-apartments">
                                     <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                                     <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="1" aria-label="Slide 2"></button>
                                     <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="2" aria-label="Slide 3"></button>
@@ -217,20 +217,20 @@
                     </div>
 
                     <div class="row card-inner-row my-row">
-                        <div class="col-12 card-inner-col my-col">
+                        <div class="col-12 card-inner-col non-padded-col my-col">
                             <p class="card-address">Dubai, UAE</p>
                         </div>
                     </div>
                     <div class="row card-inner-row my-row">
-                        <div class="col-12 card-inner-col my-col">
+                        <div class="col-12 card-inner-col non-padded-col my-col">
                             <p class="card-price">1500/month</p>
                         </div>
                     </div>
                     <div class="row card-inner-row my-row">
-                        <div class="col-sm-2 card-inner-col my-col card-rating">
+                        <div class="col-sm-2 card-inner-col non-padded-col my-col card-rating">
                             <p class="card-rating">7.7</p>
                         </div>
-                        <div class="col-sm-10 card-inner-col my-col">
+                        <div class="col-sm-10 card-inner-col non-padded-col my-col">
                             <p class="card-reviews">30239 reviews</p>
                         </div>
                     </div>
@@ -239,11 +239,11 @@
             </a>
             </div>
 
-            <div class="col-md-4 col-md-4-card col-sm-5 col-sm-5-card col-lg-3 col-lg-3-card card-col my-col">
+            <div class="col-md-4 col-md-4-card col-sm-5 col-sm-5-card col-lg-3 col-lg-3-card card-col non-padded-col my-col">
             <a href="http://172.104.152.80:5001/apartment_detail_view.php">
                 <div class="container-fluid card-inner-cont my-cont">
                     <div class="row card-inner-row card-carousel-row my-row">
-                        <div class="col-12 card-inner-col my-col">
+                        <div class="col-12 card-inner-col my-col non-padded-col carousel-indicators-apartments">
                             <div id="carouselExampleIndicators5" class="carousel slide" data-bs-ride="true">
                                 <div class="carousel-indicators">
                                     <button type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -274,20 +274,20 @@
                     </div>
 
                     <div class="row card-inner-row my-row">
-                        <div class="col-12 card-inner-col my-col">
+                        <div class="col-12 card-inner-col non-padded-col my-col">
                             <p class="card-address">Jedda, Saudi Arabia</p>
                         </div>
                     </div>
                     <div class="row card-inner-row my-row">
-                        <div class="col-12 card-inner-col my-col">
+                        <div class="col-12 card-inner-col non-padded-col my-col">
                             <p class="card-price">1500/month</p>
                         </div>
                     </div>
                     <div class="row card-inner-row my-row">
-                        <div class="col-sm-2 card-inner-col my-col card-rating">
+                        <div class="col-sm-2 card-inner-col non-padded-col my-col card-rating">
                             <p class="card-rating">9.1</p>
                         </div>
-                        <div class="col-sm-10 card-inner-col my-col">
+                        <div class="col-sm-10 card-inner-col non-padded-col my-col">
                             <p class="card-reviews">2390 reviews</p>
                         </div>
                     </div>

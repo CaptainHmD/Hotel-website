@@ -11,7 +11,7 @@
 <body>
     <div class="container-fluid parent-cont my-cont">
         <div class="row parent-row justify-content-center my-row">
-            <div class="col-12 parent-col my-col">
+            <div class="col-12 parent-col-detail-view parent-col my-col">
                 <div class="container-fluid content-cont my-cont">
                     <div class="row content-row justify-content-start my-row">
                         <div class="col-sm-2 col-5 non-padded-col my-col rating-info-col margined-info info-col">
@@ -49,7 +49,7 @@
                         </div>
                     </div>
 
-                    <div class="row content-row price-row justify-content-start my-row">
+                    <div class="row content-row price-row-detail-view justify-content-start my-row">
                         <div class="col-2 col-2-info price-col my-col non-padded-col info-col">
                             <p class="price left-aligned-text">1200$/month</p>
                         </div>
@@ -94,7 +94,7 @@
                             </button>
 
                             <!-- Modal -->
-                            <div class="modal fade" id="rating-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="rating-modal-label" aria-hidden="true">
+                            <div class="modal modal-detail-view fade" id="rating-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="rating-modal-label" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered">
                                     <div class="modal-content">
                                         <div class="modal-header">

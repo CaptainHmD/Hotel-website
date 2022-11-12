@@ -17,7 +17,7 @@ function validate_size(size, min=0, max) {
   }  
   
   // form eventListener
-const country = document.getElementById('country')
+const country = document.getElementById('country_add_form')
 if(country) {
 country.addEventListener('input', () => {
     console.log(country.value.length)
@@ -31,7 +31,7 @@ country.addEventListener('input', () => {
 })
 }
 
-const city = document.getElementById('city')
+const city = document.getElementById('city_add_form')
 if(city) {
     city.addEventListener('input', () => {
         if(!validate_size(city.value.length, 3, 25)){
@@ -44,7 +44,7 @@ if(city) {
     })
 }
 
-const address = document.getElementById('address')
+const address = document.getElementById('address_add_form')
 if(address) {
     address.addEventListener('input', () => {
         if(!validate_size(address.value.length, 3, 255)){
@@ -57,7 +57,7 @@ if(address) {
     })
 }
 
-const length = document.getElementById('length')
+const length = document.getElementById('length_add_form')
 if(length) {
     length.addEventListener('input', () => {
         console.log(length.value)
@@ -71,7 +71,7 @@ if(length) {
     })
 }
 
-const width = document.getElementById('width')
+const width = document.getElementById('width_add_form')
 if(width) {
     width.addEventListener('input', () => {
         console.log(width.value)
@@ -85,7 +85,7 @@ if(width) {
     })
 }
 
-const rooms = document.getElementById('rooms')
+const rooms = document.getElementById('rooms_add_form')
 if(rooms) {
     rooms.addEventListener('input', () => {
         console.log(rooms.value)
@@ -99,7 +99,7 @@ if(rooms) {
     })
 }
 
-const bathrooms = document.getElementById('bathrooms')
+const bathrooms = document.getElementById('bathrooms_add_form')
 if(bathrooms) {
     bathrooms.addEventListener('input', () => {
         console.log(bathrooms.value)
@@ -113,7 +113,7 @@ if(bathrooms) {
     })
 }
 
-const price = document.getElementById('price')
+const price = document.getElementById('price_add_form')
 if(price) {
     price.addEventListener('input', () => {
         console.log(price.value)
@@ -128,7 +128,7 @@ if(price) {
 }
 
 
-const description = document.getElementById('description')
+const description = document.getElementById('description_add_form')
 if(description) {
     description.addEventListener('input', () => {
         if(!validate_size(description.value.length, 10, 255)){
