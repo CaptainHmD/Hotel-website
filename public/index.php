@@ -8,7 +8,7 @@
     <title>Hotel Information System</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body class="main-body">
@@ -40,9 +40,9 @@
                     Fast Travel
                 </button>
                 <ul class="dropdown-menu">
-                    <li><a href="#home-travel" class="dropdown-item">home-travel</a></li>
-                    <li><a href="#our-services-wrapper" class="dropdown-item">services-travel</a></li>
-                    <li><a href="#img-tr" class="dropdown-item">img-travel</a></li>
+                    <li><a href="#home-travel" class="dropdown-item">Home</a></li>
+                    <li><a href="#our-services-wrapper" class="dropdown-item">Our Services</a></li>
+                    <li><a href="#img-tr" class="dropdown-item">Top Rating</a></li>
                 </ul>
 
             </div>
