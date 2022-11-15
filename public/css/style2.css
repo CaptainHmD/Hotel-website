@@ -316,26 +316,12 @@ h2 {
 
 }
 
-.cards:nth-child(1) {
-  background-image: url("https://cdn-icons-png.flaticon.com/512/2058/2058432.png");
-  background-size: 20%;
-  background-position-y: 80%;
-  background-repeat: repeat-x;
-}
-
-.cards:nth-child(2) {}
-
-.cards:nth-child(3) {}
-
-.cards:nth-child(4) {}
-
-.cards:nth-child(5) {}
-
-.cards:nth-child(6) {}
-
 .bgdcolor {
   background-color: rgb(19, 21, 22) !important;
   color: #ffffff;
+}
+.cards-btn{
+  background-color: var(--second-icon-background-color);
 }
 
 
