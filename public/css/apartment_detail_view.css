@@ -1,0 +1,291 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+/* font-family: 'Roboto Mono', monospace; */
+
+
+:root {
+  --background-color: #212325;
+  --main-icon-background-color: rgb(39, 39, 39);
+  /* you can merge between them if you want , i prefer to use it*/
+  --second-icon-background-color: #c49450;
+  /* you can merge between them if you want  ** i prefer to not use it , perhaps the icon it self*/
+  --white-color: #ffffff;
+  /* for icons , fonts and any small things */
+  --error-color: rgba(255, 87, 51, 0.3);
+}
+
+/* common-screen-sizes-for-responsive-web-design*/
+/* https://learn.microsoft.com/en-us/windows/apps/design/layout/screen-sizes-and-breakpoints-for-responsive-design */
+/* https://www.altamira.ai/blog/common-screen-sizes-for-responsive-web-design/#:~:text=As%20for%20the%20desktop%20version,width%20is%20more%20than%201280.&text=The%20tablet%20screen%20resolution%20varies,800%20and%20768%C3%971024. */
+
+body {
+  background-color: var(--background-color);
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  /* overflow: hidden; */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+a,
+p,
+span,
+svg {
+    font-family: 'Signika Negative', sans-serif;
+    font-weight: 400 !important;
+    color: white;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+  /* line-height: normal !important; */
+
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/* .container-fluid {
+    border: 3px dashed red;
+}
+
+
+.my-row, .parent-row {
+    border: 3px solid rgb(24, 197, 62);
+}
+
+.my-col, .parent-col {
+    border: 3px dotted white;
+} */
+
+.content-cont {
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.content-row {
+    padding: 0px;
+}
+
+.images-right-cont {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+}
+
+.non-padded-col {
+    padding: 0px;
+}
+
+
+.detail-image {
+    height: 100%;
+    width: 100%;
+}
+
+.detail-image:hover {
+    height: 100%;
+    width: 100%;
+    opacity: 0.8;
+}
+
+.images-row {
+    height: 100%;
+}
+
+.images-right-col {
+    padding: 0px;
+}
+
+.left-image {
+    border-radius: 10px 0px 0px 10px;
+}
+
+.right-image {
+    aspect-ratio: 20/13;
+}
+
+.left-aligned-text {
+    text-align: start;
+}
+
+.price-row {
+    margin-top: 10px;
+}
+
+.address {
+    overflow: auto;
+}
+
+.margined-info {
+    margin-right: 20px;
+}
+
+.rating-info-col {
+    width: 40px;
+    background-color: var(--second-icon-background-color);
+    border-radius: 5px;
+}
+
+.reviews-info-col, .address-info-col{
+    width: auto;
+}
+
+.description-info-col {
+    /* min-height: 100px;
+    background-color: var(--main-icon-background-color);
+    border-radius: 4px;
+    border: 1px solid; */
+    border-color: var(--second-icon-background-color);
+    color: var(--white-color);
+}
+
+
+.info-col {
+    /* background-color: var(--second-icon-background-color);
+    border-radius: 5px; */
+    margin-bottom: 10px;
+}
+
+.rating-btn-col {
+    width: auto;
+}
+
+.rating-btn {
+    background-color: var(--main-icon-background-color);
+    border: 1px solid;
+    border-color: var(--second-icon-background-color);
+}
+
+.rating-btn-submit {
+    color: var(--second-icon-background-color);
+    background-color: var(--main-icon-background-color);
+    border: 1px solid;
+    border-color: var(--second-icon-background-color);
+}
+
+.rating-btn:hover {
+    border-color: var(--white-color);
+    border: 1px solid;
+    background-color: var(--second-icon-background-color);
+}
+
+.rating-btn-submit:hover {
+    color: var(--main-icon-background-color);
+    background-color: var(--second-icon-background-color);
+    border: 1px solid;
+    border-color: var(--main-icon-background-color);
+}
+
+.modal {
+    background-color: rgb(33, 35, 37, 0.3);
+}
+
+.modal-content {
+    background-color: rgba(41, 41, 41, 0.6);
+}
+
+.modal-text-area {
+    border: 1px solid;
+    border-color: var(--second-icon-background-color);
+    background-color: var(--main-icon-background-color);
+    color: var(--second-icon-background-color);
+}
+
+.modal-text {
+    color: var(--second-icon-background-color);
+}
+
+.modal-text-area:focus {
+    border: 1px solid;
+    border-color: var(--second-icon-background-color);
+    background-color: var(--main-icon-background-color);
+    color: var(--second-icon-background-color);
+}
+
+.separator-hr-col {
+    height: auto;
+    margin-bottom: 0px;
+}
+
+.separator-hr {
+    color: var(--second-icon-background-color);
+    height: 1px;
+    margin: 0px;
+}
+
+.rating-btn-row {
+    margin-top: 20px;
+}
+
+.main-separator-row {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.user-feedback-col-small {
+    width: auto;
+}
+
+.user-feedback-wrapper-col {
+    margin-right: 30px;
+    margin-bottom: 40px;
+}
+
+
+@media (min-width: 720px){
+    [class*="col-md-5-detail"] {
+        width: 49% !important;
+    } 
+    .images-right-col {
+        margin-left: 6px;
+    }
+
+    .parent-col {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    
+}
+
+@media (max-width: 720px){
+    .detail-image-col {
+        margin-bottom: 10px !important;
+    } 
+}
+
+@media (min-width: 540px){
+    [class*="col-sm-3-info"] {
+        width: auto !important;
+    } 
+}
+
+@media (max-width: 540px){
+    [class*="col-5-info"] {
+        width: auto !important;
+    } 
+}
+
+@media (min-width: 0px){
+    [class*="col-2-info"] {
+        width: auto !important;
+    } 
+}
+
+@media (min-width: 0px){
+    [class*="col-5-detail-right"] {
+        width: 49% !important;
+    } 
+}
+
