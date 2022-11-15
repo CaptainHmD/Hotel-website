@@ -17,7 +17,6 @@
 
 CREATE DATABASE IF NOT EXISTS hotel_management_system;
 
-
 --
 -- Table structure for table `Apartment`
 --
@@ -33,7 +32,7 @@ CREATE TABLE `Apartment` (
   `length` int NOT NULL,
   `width` int NOT NULL,
   `rooms` int NOT NULL,
-  `bathrooms` int NOT NULL,
+  `bathrooms` int NOT NULL DEFAULT '0',
   `price` int NOT NULL,
   `image_name` varchar(255) NOT NULL,
   `description` text,
@@ -41,7 +40,7 @@ CREATE TABLE `Apartment` (
   PRIMARY KEY (`id`),
   KEY `user_id` (`user_id`),
   CONSTRAINT `Apartment_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `User` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -50,7 +49,7 @@ CREATE TABLE `Apartment` (
 
 LOCK TABLES `Apartment` WRITE;
 /*!40000 ALTER TABLE `Apartment` DISABLE KEYS */;
-INSERT INTO `Apartment` VALUES (1,'fwaf','waff','fwafa',10,10,1,0,1,'cIliJeHCqm.png,9HaLVmXJU6.png','fwafawfwaff',2),(2,'fawfawfawf','wafawfaw','fwafwafa',10,10,1,1,1,'IhWlLZu1Jc.png,jQWIPUc6lu.png,Pm6DsTBxla.png,Ay1LUiNu7R.png,iTRWasOMfJ.png','fawfawfawfawf',2),(3,'Saudi Arabia','Jedah','Alsetten, Annuzha, Alqadi',200,150,5,3,1600,'rIaG9zfqeB.jpeg,Q5kMDGR3uq.jpg,pnatP49x5u.jpg,08Kaf3pFzV.jpg,9Fwx2LVQI1.jpg,hpUPt5Y4Hb.jpg,CAIQHyv8b1.jpg,ItsjoaqFfc.jpg,ZC6fjKktXT.jpeg','Altihut is opening a new chapter in development of the adventure tourism in Georgia. It is aimed to make tracking, hiking and mountaineering accessible and attractive in Caucasus Region to bigger audience then it is',2),(4,'fwagawgwag','wadfwad','wdadwafwa',10,10,1,1,1,'NVloDFdbI2.jpeg,2ehY6LvlxQ.jpeg,N1lti6AZcO.jpeg,lvCAsjqXR1.jpg,KEgeFsRqMj.jpg,1oZilFC2NA.jpg,67MYLZahPk.jpg','grgaergaergeargearg',2);
+INSERT INTO `Apartment` VALUES (1,'fwafawf','wafawfaw','fwafawf',10,10,1,1,1,'c3oDXPHtmM.jpeg,w3A7CEqNeK.jpeg,N54IyHnzcd.jpeg,3c0rASkXaH.jpg,dbHDeEfINw.jpg','fwafwafawfwaffwafwafawf',2),(2,'fwafwa','fawfwaf','fwafwaf',10,10,1,0,1,'BPc0Q5Kpdb.png,Etc8ajKove.png,1cuSCmQAx6.png,JFqm0Mn4Sb.png','fwafwafawf',2);
 /*!40000 ALTER TABLE `Apartment` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -91,4 +90,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-11-15 14:25:59
+-- Dump completed on 2022-11-15 22:02:01
