@@ -79,7 +79,7 @@ function extract_apartment_images($names_str, $target_dir){
     $names_arr = explode(',', $names_str);
     $len_names = count($names_arr);
     for($i = 0; $i < $len_names; $i++){
-        $names_arr[$i] = "http://localhost:5003/" . $target_dir . $names_arr[$i];
+        $names_arr[$i] = get_url($target_dir) . $names_arr[$i];
     }
     return $names_arr;
 }

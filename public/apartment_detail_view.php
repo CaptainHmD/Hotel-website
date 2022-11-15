@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] === "GET"){
     if(!$apartment){
         die("Err. could not preform the query ".$sql_stmt.PHP_EOL.$mysqli_conn->error);
     };
-    $images = extract_apartment_images($apartment["image_name"], "images/");
+    $images = extract_apartment_images($apartment["image_name"], "/images/");
 }
 
 ?>

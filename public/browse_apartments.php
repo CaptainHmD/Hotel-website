@@ -87,7 +87,7 @@ $len_hotels = $hotels->num_rows;
                                 <div class="carousel-indicators carousel-indicators-apartments">
                                     <button type="button" data-bs-target=<?php echo "#carouselExampleIndicators".$i?> data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                                     <?php 
-                                    $images = extract_apartment_images($hotel["image_name"], "images/");
+                                    $images = extract_apartment_images($hotel["image_name"], "/images/");
                                     for ($j  = 1; $j < count($images); $j++){
                                     ?>
                                     <button type="button" data-bs-target=<?php echo "#carouselExampleIndicators".$i?> data-bs-slide-to=<?php echo $j?> aria-label=<?php echo "Slide " . $j ?>></button>
@@ -132,7 +132,7 @@ $len_hotels = $hotels->num_rows;
                     </div>
                     <div class="row card-inner-row my-row">
                         <div class="col-sm-2 card-inner-col non-padded-col my-col card-rating">
-                            <p class="card-rating">8.1</p>
+                            <p class="card-rating"><?php echo var_dump($images)?></p>
                         </div>
                         <div class="col-sm-10 card-inner-col non-padded-col my-col">
                             <p class="card-reviews">1589 reviews</p>
