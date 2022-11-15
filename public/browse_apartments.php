@@ -79,7 +79,7 @@ $len_hotels = $hotels->num_rows;
                 $hotel = $hotels->fetch_assoc();
             ?>
             <div class="col-md-4 col-md-4-card col-sm-5 col-sm-5-card col-lg-3 col-lg-3-card card-col non-padded-col my-col">
-                <a href=<?php echo "http://localhost:5003/apartment_detail_view.php?apartment-id=" . $hotel["id"]?>>
+                <a href=<?php echo get_url("/apartment_detail_view.php?apartment-id=") . $hotel["id"]?>>
                 <div class="container-fluid card-inner-cont my-cont">
                     <div class="row card-inner-row card-carousel-row my-row">
                         <div class="col-12 card-inner-col non-padded-col my-col">
