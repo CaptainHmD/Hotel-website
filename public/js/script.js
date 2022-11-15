@@ -187,16 +187,72 @@ if(description) {
     })
 }
 
+let required_fields = [country, city, address, length, width, rooms, bathrooms, description]
+
+function validate_required_field(field) {
+    value = field.value.toString()
+    console.log(value)
+    return value.length > 0
+}
+
 // form on submit validation
 const addApartmentForm = document.getElementById('apartment_form')
 if(addApartmentForm) {
     addApartmentForm.addEventListener("submit", (event) => {
+        // check required fields
+       if(!validate_size(description.value.length, 10, 500)){
+        description.style.backgroundColor = errorColor
+        description.classList.add("invalid-field");
+        } 
+
+        if(!validate_size(price.value, 1, 10000000)){
+            price.style.backgroundColor = errorColor
+            price.classList.add("invalid-field");
+        }
+
+        if(!validate_size(bathrooms.value, 0, 50)){
+            bathrooms.style.backgroundColor = errorColor
+            bathrooms.classList.add("invalid-field");
+        }
+
+        if(!validate_size(rooms.value, 1, 50)){
+            rooms.style.backgroundColor = errorColor
+            rooms.classList.add("invalid-field");
+        }
+
+        if(!validate_size(width.value, 10, 1000)){
+            width.style.backgroundColor = errorColor
+            width.classList.add("invalid-field");
+        }
+
+        if(!validate_size(length.value, 10, 1000)){
+            length.style.backgroundColor = errorColor
+            length.classList.add("invalid-field");
+        }
+
+        if(!validate_size(address.value.length, 3, 255)){
+            address.style.backgroundColor = errorColor
+            address.classList.add("invalid-field");
+        }
+
+        if(!validate_size(city.value.length, 3, 25)){
+            city.style.backgroundColor = errorColor
+            city.classList.add("invalid-field");
+        }
+
+        if(!validate_size(country.value.length, 3, 25)){
+            country.style.backgroundColor = errorColor
+            country.classList.add("invalid-field");
+        }
+
        // check for invalid-field classes
        const invalidFields = document.getElementsByClassName("invalid-field");
-       if(invalidFields.length > 0){
+       if (invalidFields.length > 0){
         event.preventDefault();
         return false;
        }
+
+       
     })
 }
 
