@@ -1,3 +1,25 @@
+<?php
+session_start();
+
+require_once("utils/mysql_config.php");
+require_once("utils/utils.php");
+
+$url = strtok($_SERVER["REQUEST_URI"], '?');
+login_only($url);
+
+if ($_SERVER["REQUEST_METHOD"] === "GET"){
+    $apartmentId = intval($_GET["apartment-id"]);
+
+    // get apartment from db
+    $apartment = retrieve_apartment_by_id($mysqli_conn, $apartmentId);
+    if(!$apartment){
+        die("Err. could not preform the query ".$sql_stmt.PHP_EOL.$mysqli_conn->error);
+    };
+    $images = extract_apartment_images($apartment["image_name"], "images/");
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -72,29 +94,49 @@
                             <p class="reviews left-aligned-text">24591 reviews</p>
                         </div>
                         <div class="col-sm-5 col-12 non-padded-col my-col address-info-col info-col">
-                            <p class="country left-aligned-text">Barcelona, Spain</p>
+                            <p class="country left-aligned-text"><?php echo $apartment['country'] . ", " . $apartment['city']?></p>
                         </div>
                     </div>
 
                     <div class="row content-row images-row justify-content-start my-row">
                         <div class="col-sm-12 col-md-5 col-md-5-detail detail-image-col non-padded-col my-col">
-                            <img src="https://www.thearmitage.com/assets/images/home/2000/home_banner_v7.jpg" alt="" class="detail-image left-image">
+                            <img src=<?php echo $images[0]?> alt="Apartment image" class="detail-image left-image">
                         </div>
                         <div class="col-sm-12 col-md-5 col-md-5-detail images-right-col my-col">
                             <div class="container-fluid images-right-cont my-cont">
                                 <div class="row justify-content-between images-row my-row">
-                                    <div class="col-5 col-5-detail-right detail-image-col non-padded-col my-col">
-                                        <img src="https://images1.apartments.com/i2/1zpSWQwDVnd-mQZVCUuBqDtPT_U2fB6EcHMIhsBqGus/117/blake-lofts-los-angeles-ca-building-photo.jpg" alt="" class="detail-image right-image">
+                                    <?php if (isset($images[1])) {
+                                    ?>
+                                    <div class="col-5 col-5-detail-right detail-image-col detail-image-col-right align-self-start  non-padded-col my-col">
+                                        <img src=<?php echo $images[1];?> alt="Apartment image" class="detail-image right-image">
                                     </div>
-                                    <div class="col-5 col-5-detail-right detail-image-col non-padded-col my-col">
-                                        <img src="https://images1.apartments.com/i2/KiAh59Odk3yaqTrbWICxK7rvRxYhRBWJUNVCyoMVOjM/117/bristol-station-apartments-carteret-nj-building-photo.jpg" alt="" class="detail-image right-image">
+                                    <?php
+                                    }
+                                    ?>
+                                    <?php if (isset($images[2])) {
+                                    ?>
+                                    <div class="col-5 col-5-detail-right detail-image-col detail-image-col-right align-self-start non-padded-col my-col">
+                                        <img src=<?php echo $images[2];?> alt="Apartment image" class="detail-image right-image">
                                     </div>
-                                    <div class="col-5 col-5-detail-right detail-image-col non-padded-col align-self-end my-col">
-                                        <img src="https://images1.apartments.com/i2/qTHy4dIvoEVeXrVhVwTzWu1ygQ0xeUXjvgiOwIxWSnE/117/livingston-apartment-flats-chesterfield-va-building-photo.jpg" alt="" class="detail-image right-image">
+                                    <?php
+                                    }
+                                    ?>
+                                    <?php if (isset($images[3])) {
+                                    ?>
+                                    <div class="col-5 col-5-detail-right detail-image-col detail-image-col-right align-self-end non-padded-col my-col">
+                                        <img src=<?php echo $images[3];?> alt="Apartment image" class="detail-image right-image">
                                     </div>
-                                    <div class="col-5 col-5-detail-right detail-image-col non-padded-col align-self-end my-col">
-                                        <img src="https://www.benttreeapartments.com/content/dam/aimco-properties/bent-tree-apartments/1920x1121/interior/BentTree-ChestnutPremier-Kitchen1_staged.jpg" alt="" class="detail-image right-image">
+                                    <?php
+                                    }
+                                    ?>
+                                    <?php if (isset($images[4])) {
+                                    ?>
+                                    <div class="col-5 col-5-detail-right detail-image-col detail-image-col-right align-self-end non-padded-col my-col">
+                                        <img src=<?php echo $images[4];?> alt="Apartment image" class="detail-image right-image">
                                     </div>
+                                    <?php
+                                    }
+                                    ?>
                                 </div>
                             </div>
                         </div>
@@ -102,28 +144,28 @@
 
                     <div class="row content-row price-row-detail-view justify-content-start my-row">
                         <div class="col-2 col-2-info price-col my-col non-padded-col info-col">
-                            <p class="price left-aligned-text">1200$/month</p>
+                            <p class="price left-aligned-text"><?php echo $apartment['price'] . "$/month"?></p>
                         </div>
                     </div>
 
                     <div class="row content-row justify-content-start my-row">
                         <div class="col-sm-3 col-sm-3-info col-5 col-5-info my-col non-padded-col margined-info info-col">
-                            <p class="left-aligned-text">length: 125m</p>
+                            <p class="left-aligned-text"><?php echo "length: " . $apartment['length'] . "m"?></p>
                         </div>
                         <div class="col-sm-3 col-sm-3-info col-5 col-5-info my-col non-padded-col margined-info info-col">
-                            <p class="left-aligned-text">width: 200m</p>
+                            <p class="left-aligned-text"><?php echo "width: " . $apartment['width'] . "m"?></p>
                         </div>
                         <div class="col-sm-3 col-sm-3-info col-5 col-5-info my-col non-padded-col margined-info info-col">
-                            <p class="left-aligned-text">rooms: 5</p>
+                            <p class="left-aligned-text"><?php echo "rooms: " . $apartment['rooms']?></p>
                         </div>
                         <div class="col-sm-3 col-sm-3-info col-5 col-5-info my-col non-padded-col info-col">
-                            <p class="left-aligned-text">bathrooms: 3</p>
+                            <p class="left-aligned-text"><?php echo "bathrooms: " . $apartment['bathrooms']?></p>
                         </div>
                     </div>
 
                     <div class="row content-row justify-content-start my-row">
                         <div class="col my-col non-padded-col info-col">
-                            <p class="address left-aligned-text">Annakasa, awal bait, ala alyasar</p>
+                            <p class="address left-aligned-text"><?php echo $apartment['address'] ?></p>
                         </div>
                     </div>
 
@@ -134,7 +176,7 @@
                             <hr class="separator-hr">
                         </div>
                         <div class="col-11 my-col info-col non-padded-col description-info-col">
-                            <p class="description left-aligned-text">Altihut is opening a new chapter in development of the adventure tourism in Georgia. It is aimed to make tracking, hiking and mountaineering accessible and attractive in Caucasus Region to bigger audience then it is today. By constructing the HUT named AltiHut 3.014, Company Altitude is offering exceptional, professional and flexible services to our guests in a sustainable, innovative and environmentally friendly way;</p>
+                            <p class="description left-aligned-text"><?php echo $apartment['description']?></p>
                         </div>
                     </div>
 

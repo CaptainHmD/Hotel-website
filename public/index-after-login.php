@@ -1,3 +1,15 @@
+<?php
+session_start();
+
+require_once("utils/mysql_config.php");
+require_once("utils/utils.php");
+
+$url = strtok($_SERVER["REQUEST_URI"], '?');
+login_only($url);
+$user = retrieve_current_user($mysqli_conn);
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -57,9 +69,7 @@
             </h1>
         </div>
         <div class="nav-section" id="login-logout-section">
-            <a href="">
-                <h2 class="nav-text">User name</h2>
-            </a>
+                <h2 class="nav-text"><?php echo $user['username']?></h2>
         </div>
     </nav>
 

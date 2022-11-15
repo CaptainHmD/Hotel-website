@@ -1,3 +1,37 @@
+<?php
+session_start();
+
+require_once("utils/mysql_config.php");
+require_once("utils/utils.php");
+
+$url = strtok($_SERVER["REQUEST_URI"], '?');
+login_only($url);
+
+if ($_SERVER["REQUEST_METHOD"] === "POST"){
+    $country = trim($_POST["country"]);
+    $city = trim($_POST["city"]);
+    $address = trim($_POST["address"]);
+    $length = trim($_POST["length"]);
+    $width = trim($_POST["width"]);
+    $rooms = trim($_POST["rooms"]);
+    $bathrooms = trim($_POST["bathrooms"]);
+    $price = trim($_POST["price"]);
+    $configured_image_name = handle_apartment_images($_FILES["apartment_images"], "./images/", $mysqli_conn);
+    $description = trim($_POST["description"]);
+    $user = retrieve_current_user($mysqli_conn);
+    $user_id = $user['id'];
+
+    // add apartment to db
+    $sql_stmt = "insert into Apartment (country, city, address, length, width, rooms, bathrooms, price, image_name, description, user_id) values ('$country', '$city', '$address', '$length', '$width', '$rooms', '$bathrooms', '$price', '$configured_image_name', '$description', '$user_id');";
+    if(!$mysqli_conn->query($sql_stmt)){
+        die("Err. could not preform the query ".$sql_stmt.PHP_EOL.$mysqli_conn->error);
+    }else{
+        header("Location: /browse_apartments.php");
+    }
+
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -64,7 +98,7 @@
     <div class="container parent-cont add-form-parent-cont">
         <div class="row justify-content-center parent-row">
             <div class="col-sm-10 col-md-8 parent-col">
-                <form action="/add_apartment.php" method="POST" enctype="multipart/form-data" id="apartment_form" class="container my-cont">
+                <form action=" " method="POST" enctype="multipart/form-data" id="apartment_form" class="container my-cont">
                     <div class="form-fields-wrapper">
                         <div class="form-row justify-content-center add_apartment_margined_row my-row">
                             <div class='col-12 my-col text-center'>
@@ -139,7 +173,7 @@
                                 <div class="mb-3">
                                     <div class="mb-3">
                                         <label for="apartment_images_add_form" class="form-label add_form_label">Apartment images</label>
-                                        <input class="form-control add_form_field" type="file" id="apartment_images_add_form" name="apartment_images" accept="image/png, image/jpeg, image/jpg" multiple>
+                                        <input class="form-control add_form_field" type="file" id="apartment_images_add_form" name="apartment_images[]" accept="image/png, image/jpeg, image/jpg" multiple="multiple">
                                     </div>
                                 </div>
                             </div>

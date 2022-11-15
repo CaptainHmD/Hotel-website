@@ -131,7 +131,7 @@ if(price) {
 const description = document.getElementById('description_add_form')
 if(description) {
     description.addEventListener('input', () => {
-        if(!validate_size(description.value.length, 10, 255)){
+        if(!validate_size(description.value.length, 10, 500)){
             description.style.backgroundColor = errorColor
             description.classList.add("invalid-field");
         } else {

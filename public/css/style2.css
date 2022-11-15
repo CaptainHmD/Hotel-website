@@ -980,6 +980,11 @@ main>.article-style {
 
 .images-right-col {
     padding: 0px;
+    bottom: 0;
+}
+
+.detail-image-col-right{
+  height: 49%;
 }
 
 .left-image {

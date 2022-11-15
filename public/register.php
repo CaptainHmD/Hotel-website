@@ -1,3 +1,47 @@
+<?php
+require_once("utils/mysql_config.php");
+// require_once("utils/form_validators.php");
+
+$url = strtok($_SERVER["REQUEST_URI"], '?'); // current page url no query string
+
+if ($_SERVER["REQUEST_METHOD"] === "POST"){
+    $username = trim($_POST["username"]);
+    $email = trim($_POST["email"]); // remove white spaces
+    $password = trim($_POST["password"]);
+    $confirmPassword = $_POST["confirmPassword"];
+    if (strcmp($password, $confirmPassword) !== 0){
+        header("Location: " + "$url" +"?email=$email&redirected_for=password"); // if validation fails return to form page with populated form field
+        die();
+    }
+    $hashed_password = password_hash($password, PASSWORD_BCRYPT, ['cost' => 9]); // randomly salted 
+
+    // add user to db
+    // check if user exists
+    $sql_stmt_email = "select id from User where email='".$email."';";
+    $sql_stmt_user = "select id from User where username='".$username."';";
+    $result_email = $mysqli_conn->query($sql_stmt_email);
+    $result_user = $mysqli_conn->query($sql_stmt_user);
+    if ($result_email->num_rows > 0){
+        header("Location: $url?email=$email&username=$username&redirected_for=email"); // if validation fails return to form page with populated form field
+        die();
+    }else if($result_user->num_rows > 0){
+        header("Location: $url?email=$email&username=$username&redirected_for=email"); // if validation fails return to form page with populated form field
+        die();
+    } else {
+        $sql_stmt = "insert into User (username, email, password) values ('$username', '$email', '$hashed_password');";
+        if(!$mysqli_conn->query($sql_stmt)){
+            die("Err. could not preform the query ".$sql_stmt.PHP_EOL.$mysqli_conn->error);
+        }else{
+            header("Location: /login.php?sign_up=true");
+        }
+
+    }
+
+
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,31 +64,7 @@
                         <h1 class="nav-text" id="hotel-nav">hotel</h1>
                     </div>
                 </a>
-
             </div>
-
-            <!-- must be list and reveal result on hover -->
-            <!-- <div class="dropdown"> -->
-
-
-                <!-- <h2 class="nav-section nav-text" id="fast-travail">Fast Travel&nbsp;</h2>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-caret-down-fill" style="margin-top: 4px;white-space: nowrap;" viewBox="0 0 16 16" s>
-                    <path
-                        d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
-                </svg> -->
-
-                <!-- <button class="btn  btn-secondary dropdown-toggle dropdown-btn nav-text" type="button"
-                    data-bs-toggle="dropdown" aria-expanded="false">
-                    Fast Travel
-                </button>
-                <ul class="dropdown-menu">
-                    <li><a href="#home-travel" class="dropdown-item">home-travel</a></li>
-                    <li><a href="#our-services-wrapper" class="dropdown-item">services-travel</a></li>
-                    <li><a href="#img-tr" class="dropdown-item">img-travel</a></li>
-                </ul>
-
-            </div> -->
         </div>
 
         <div class="nav-section" id="register-section">
@@ -64,7 +84,7 @@
     <div class="container parent-cont add-form-parent-cont ">
         <div class="row justify-content-center  parent-row">
             <div class="col-sm-10 col-md-8 parent-col">
-                <form action="/add_apartment.php" method="POST" enctype="multipart/form-data" id="apartment_form" class="container my-cont">
+                <form action=" " method="POST" enctype="multipart/form-data" id="apartment_form" class="container my-cont">
                     <div class="form-fields-wrapper">
                         <div class="form-row justify-content-center add_apartment_margined_row my-row">
                             <div class='col-12 my-col text-center'>
@@ -78,26 +98,26 @@
                             <div class='col-sm-12 my-col'>
                                 <div class="mb-3">
                                     <label for="username-register" class="form-label add_form_label">Username</label>
-                                    <input type="text" name="username-register" class="form-control add_form_field" id="username-register" placeholder="Username" required>
+                                    <input type="text" name="username" class="form-control add_form_field" id="username-register" placeholder="Username" required>
                                 </div>
                             </div>
                             <div class='col-sm-12 my-col'>
                                 <div class="mb-3">
                                 <label for="email-register" class="form-label add_form_label">Email</label>
-                                    <input type="email" name="email-register" class="form-control add_form_field" id="email-register" placeholder="Email@hotel.com"  required>
+                                    <input type="email" name="email" class="form-control add_form_field" id="email-register" placeholder="Email@hotel.com"  required>
                                 </div>
                             </div>
                         </div>
                             <div class='col-sm-12 my-col'>
                                 <div class="mb-3">
                                 <label for="password-register" class="form-label add_form_label">Password</label>
-                                    <input type="password" name="password-register" class="form-control add_form_field" id="password-register" placeholder="Password" minlength="8" required>
+                                    <input type="password" name="password" class="form-control add_form_field" id="password-register" placeholder="Password" minlength="8" required>
                                 </div>
                             </div>
                             <div class='col-sm-12 my-col'>
                                 <div class="mb-3">
                                 <label for="repassword-register" class="form-label add_form_label">Confirm Password</label>
-                                    <input type="password" name="repassword-register" class="form-control add_form_field" id="repassword-register" placeholder="Confirm Password" minlength="8" required>
+                                    <input type="password" name="confirmPassword" class="form-control add_form_field" id="repassword-register" placeholder="Confirm Password" minlength="8" required>
                                 </div>
                             </div>
 

@@ -1,0 +1,15 @@
+<?php
+/* Database credentials.*/
+define('DB_SERVER', 'localhost');
+define('DB_USERNAME', 'hotel_management_user');
+define('DB_PASSWORD', 'Almowld@12');
+define('DB_NAME', 'hotel_management_system');
+ 
+/* Attempt to connect to MySQL database */
+$mysqli_conn = new mysqli(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
+ 
+// Check connection
+if($mysqli_conn === false){
+    die("ERROR: Could not connect. " . $mysqli_conn->connect_error);
+}
+?>
