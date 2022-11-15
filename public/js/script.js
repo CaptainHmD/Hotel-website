@@ -202,3 +202,54 @@ if(addApartmentForm) {
 
 
 
+// register validation
+
+
+const email = document.getElementById('email-register')
+const password = document.getElementById('password-register')
+const rePassword = document.getElementById('repassword-register')
+
+
+const isValidEmail = () => {
+    var regex =/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return regex.test(email.value)
+}
+
+
+rePassword.addEventListener('keyup', confirmPassword)
+password.addEventListener('keyup', confirmPassword)
+email.addEventListener('keyup', testEmail)
+
+function testEmail() {
+    if (email) {
+        const testValidation = isValidEmail();
+        console.log(testValidation);
+        if(testValidation){
+            email.classList.remove('invalid-field')
+        }else{
+            email.classList.add('invalid-field')
+
+        }
+        
+    }
+}
+
+function confirmPassword() {
+
+    if (password && rePassword) {
+        addError()
+    }
+}
+
+
+
+
+function addError() {
+    if (password.value === rePassword.value) {
+        rePassword.classList.remove('invalid-field')
+        console.log('matched');
+    } else {
+        console.log('not matched');
+        rePassword.classList.add('invalid-field')
+    }
+}

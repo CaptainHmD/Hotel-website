@@ -1173,3 +1173,7 @@ main>.article-style {
 .my-col, .parent-col {
   border: 3px dotted white;
 } */
+
+ #repassword-register.invalid-field , #email-register.invalid-field{
+  color: red;
+}
