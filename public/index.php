@@ -1,3 +1,16 @@
+<?php
+session_start();
+
+require_once("utils/utils.php");
+
+if(is_logged_in()){
+    header("Location: /index-after-login.php");
+    die();
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
