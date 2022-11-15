@@ -133,7 +133,7 @@ $user = retrieve_current_user($mysqli_conn);
                     </div>
                     <div class="row card-inner-row my-row">
                         <div class="col-sm-2 card-inner-col non-padded-col my-col card-rating">
-                            <p class="card-rating"><?php echo var_dump($images)?></p>
+                            <p class="card-rating">9.8</p>
                         </div>
                         <div class="col-sm-10 card-inner-col non-padded-col my-col">
                             <p class="card-reviews">1589 reviews</p>
