@@ -53,9 +53,9 @@ $user = retrieve_current_user($mysqli_conn);
                     Site Pages
                 </button>
                 <ul class="dropdown-menu">
-                    <li><a href="http://172.104.152.80:5001/add_apartment.php" class="dropdown-item">Add Apartment</a>
+                    <li><a href=<?php echo get_url("/add_apartment.php") ?> class="dropdown-item">Add Apartment</a>
                     </li>
-                    <li><a href="http://172.104.152.80:5001/browse_apartments.php" class="dropdown-item">Browse
+                    <li><a href=<?php echo get_url("/browse_apartments.php") ?> class="dropdown-item">Browse
                             Apartments</a></li>
                     <!-- <li><a href="#img-tr" class="dropdown-item">img-travel</a></li> -->
                 </ul>
@@ -65,7 +65,7 @@ $user = retrieve_current_user($mysqli_conn);
 
         <div class="nav-section" id="register-section">
             <h1>
-                <a href="/register" id="register-text" class="nav-text">Logout</a>
+                <a href=<?php echo get_url("/logout.php") ?> id="register-text" class="nav-text">Logout</a>
             </h1>
         </div>
         <div class="nav-section" id="login-logout-section">

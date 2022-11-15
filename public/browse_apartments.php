@@ -24,7 +24,7 @@ $len_hotels = $hotels->num_rows;
     <!-- <div class="container"> -->
     <nav id="navbar">
         <div class="nav-section" id="logo-section">
-            <div id="logo-wrapper"> <a href="http://172.104.152.80:5001/add_apartment.php" id="d-gap">
+            <div id="logo-wrapper"> <?php echo get_url("/") ?> id="d-gap">
                     <img id="logo" src="../resources/icons/a6c89eb25f20c37a608f1cef9ca70d24.svg" alt="">
                     <div id="nav-text-wrapper">
                         <h1 class="nav-text" id="hotel-nav">hotel</h1>
@@ -44,14 +44,16 @@ $len_hotels = $hotels->num_rows;
                         d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
                 </svg> -->
 
-                <button class="btn  btn-secondary dropdown-toggle dropdown-btn nav-text" type="button"
-                    data-bs-toggle="dropdown" aria-expanded="false">
-                    Fast Travel
+                <button class="btn  btn-secondary dropdown-toggle dropdown-btn" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Site Pages
                 </button>
                 <ul class="dropdown-menu">
-                    <li><a href="#home-travel" class="dropdown-item">home-travel</a></li>
-                    <li><a href="#our-services-wrapper" class="dropdown-item">services-travel</a></li>
-                    <li><a href="#img-tr" class="dropdown-item">img-travel</a></li>
+                    <li><a href=<?php echo get_url("/add_apartment.php") ?> class="dropdown-item">Add Apartment</a>
+                    </li>
+                    <li><a href=<?php echo get_url("/browse_apartments.php") ?> class="dropdown-item">Browse
+                            Apartments</a></li>
+                    <!-- <li><a href="#img-tr" class="dropdown-item">img-travel</a></li> -->
                 </ul>
 
             </div>
@@ -59,13 +61,11 @@ $len_hotels = $hotels->num_rows;
 
         <div class="nav-section" id="register-section">
             <h1>
-                <a href="/register" id="register-text" class="nav-text">Sign Up</a>
+                <a href=<?php echo get_url("/logout.php") ?> id="register-text" class="nav-text">Logout</a>
             </h1>
         </div>
         <div class="nav-section" id="login-logout-section">
-            <a href="">
-                <h2 class="nav-text">Login</h2>
-            </a>
+                <h2 class="nav-text"><?php echo $user['username']?></h2>
         </div>
     </nav>
         <!-- end nav -->
