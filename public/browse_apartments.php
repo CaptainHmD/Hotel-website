@@ -73,7 +73,7 @@ $user = retrieve_current_user($mysqli_conn);
 
 
     <div class="container-fluid parent-cont cards-parent-cont my-cont">
-        <div class="row cards-row justify-content-between my-row">
+        <div class="row cards-row justify-content-evenly my-row">
             <?php
             for ($i = 0; $i < $len_hotels; $i++){
                 $hotels->data_seek($i);

@@ -58,7 +58,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST"){
  <!-- <div class="container"> -->
  <nav id="navbar">
         <div class="nav-section" id="logo-section">
-            <div id="logo-wrapper"> <a href="http://172.104.152.80:5001/add_apartment.php" id="d-gap">
+            <div id="logo-wrapper"> <a href=<?php echo get_url("/") ?> id="d-gap">
                     <img id="logo" src="../resources/icons/a6c89eb25f20c37a608f1cef9ca70d24.svg" alt="">
                     <div id="nav-text-wrapper">
                         <h1 class="nav-text" id="hotel-nav">hotel</h1>
