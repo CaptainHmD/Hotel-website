@@ -66,11 +66,11 @@ if ($_SERVER["REQUEST_METHOD"] === "POST"){
 
         <div class="nav-section" id="register-section">
             <h1>
-                <a href="/register" id="register-text" class="nav-text">Sign Up</a>
+                <a href=<?php echo get_url("/register.php") ?> id="register-text" class="nav-text">Sign Up</a>
             </h1>
         </div>
         <div class="nav-section" id="login-logout-section">
-            <a href="">
+            <a href=<?php echo get_url("/login.php") ?>>
                 <h2 class="nav-text">Login</h2>
             </a>
         </div>
