@@ -19,6 +19,8 @@ try {
 // When the user scrolls down 20px from the top of the document, slide down the navbar and change alpha to 1
 // When the user scrolls to the top of the page, slide up the navbar (default = 10%) and return alpha to 0.7
 
+try {
+  
 window.onscroll = function() {scrollFunction()};
 const navbar = document.getElementById("navbar");
 function scrollFunction() {
@@ -33,6 +35,9 @@ function scrollFunction() {
 }
 
 
+} catch (error) {
+  
+}
 
 // login section
 // const username = document.getElementById('username-login');
