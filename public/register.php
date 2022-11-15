@@ -1,6 +1,6 @@
 <?php
 require_once("utils/mysql_config.php");
-// require_once("utils/form_validators.php");
+require_once("utils/utils.php");
 
 $url = strtok($_SERVER["REQUEST_URI"], '?'); // current page url no query string
 
