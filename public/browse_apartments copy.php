@@ -7,6 +7,7 @@ require_once("utils/utils.php");
 $url = strtok($_SERVER["REQUEST_URI"], '?');
 login_only($url);
 $hotels = retrieve_hotels($mysqli_conn);
+$user = retrieve_current_user($mysqli_conn);
 ?>
 
 <!DOCTYPE html>

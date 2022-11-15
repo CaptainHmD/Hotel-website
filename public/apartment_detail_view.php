@@ -18,6 +18,8 @@ if ($_SERVER["REQUEST_METHOD"] === "GET"){
     $images = extract_apartment_images($apartment["image_name"], "/images/");
 }
 
+$user = retrieve_current_user($mysqli_conn);
+
 ?>
 
 <!DOCTYPE html>

@@ -8,6 +8,7 @@ $url = strtok($_SERVER["REQUEST_URI"], '?');
 login_only($url);
 $hotels = retrieve_hotels($mysqli_conn);
 $len_hotels = $hotels->num_rows;
+$user = retrieve_current_user($mysqli_conn);
 ?>
 
 <!DOCTYPE html>

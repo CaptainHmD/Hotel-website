@@ -30,6 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST"){
     }
 
 }
+$user = retrieve_current_user($mysqli_conn);
 ?>
 
 <!DOCTYPE html>
