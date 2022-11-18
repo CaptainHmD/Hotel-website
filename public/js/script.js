@@ -204,10 +204,17 @@ if(addApartmentForm) {
 
 // register validation
 
+let rePassword;
+let password ;
+let email;
+try {
+     email = document.getElementById('email-register')
+     password = document.getElementById('password-register')
+     rePassword = document.getElementById('repassword-register')    
+} catch (error) {
+    
+}
 
-const email = document.getElementById('email-register')
-const password = document.getElementById('password-register')
-const rePassword = document.getElementById('repassword-register')
 
 
 const isValidEmail = () => {
