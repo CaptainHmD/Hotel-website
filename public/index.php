@@ -83,7 +83,7 @@ if(is_logged_in()){
                         <h1>The Vacation Heaven</h1>
                     </div>
                     <h4 class="info-text ">
-                    Our website is operates an online marketplace focused on short-term homestays and experiences
+                    Our website operates an online marketplace focused on short-term homestays and experiences
                     </h4>
                 </div>
 
