@@ -459,8 +459,8 @@ main>.article-style {
 }
 .register-body .footer{
   position: static;
-  /* bottom: 0; */
-  /* left: 0; */
+  bottom: 0;
+  left: 0;
 }
 
 
