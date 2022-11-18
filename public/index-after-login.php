@@ -83,7 +83,7 @@ $user = retrieve_current_user($mysqli_conn);
                         <h1>The Vacation Heaven</h1>
                     </div>
                     <h4 class="info-text ">
-                        There is no Vacation in UQU bi... &nbsp;&nbsp;&nbsp;D:
+                    Our website is operates an online marketplace focused on short-term homestays and experiences
                     </h4>
                 </div>
 
