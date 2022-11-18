@@ -1,6 +1,6 @@
 <?php
 /* Database credentials.*/
-define('DB_SERVER', 'localhost');
+define('DB_SERVER', '172.104.152.80');
 define('DB_USERNAME', 'hotel_management_user');
 define('DB_PASSWORD', 'Almowld@12');
 define('DB_NAME', 'hotel_management_system');
