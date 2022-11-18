@@ -100,9 +100,9 @@ if(is_logged_in()){
                 </div>
                 <div class="services-wrapper">
                     <div class="cards box-shadow">
-                        <h5 class="cards-title">Professional photography</h5>
+                        <h5 class="cards-title nav-text">Professional photography</h5>
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        <button type="button" class="btn dropdown-btn nav-text" data-bs-toggle="modal"
                             data-bs-target="#exampleModal">
                             Read More
                         </button>
@@ -127,10 +127,10 @@ if(is_logged_in()){
                         </div>
                     </div>
                     <div class="cards box-shadow">
-                        <h5 class="cards-title"> price optimization</h5>
+                        <h5 class="cards-title nav-text"> price optimization</h5>
 
                         <!-- modal; -->
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#price">
+                        <button type="button" class="btn dropdown-btn nav-text" data-bs-toggle="modal" data-bs-target="#price">
                             Read More
                         </button>
                         <div class="modal fade" id="price" tabindex="-1" aria-labelledby="price -Modal"
@@ -161,10 +161,10 @@ if(is_logged_in()){
 
 
                     <div class="cards box-shadow">
-                        <h5 class="cards-title">Guest communication</h5>
+                        <h5 class="cards-title nav-text">Guest communication</h5>
 
                         <!-- modal -->
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Guest">
+                        <button type="button" class="btn dropdown-btn nav-text" data-bs-toggle="modal" data-bs-target="#Guest">
                             Read More
                         </button>
                         <div class="modal fade" id="Guest" tabindex="-1" aria-labelledby="Guest-Modal"
@@ -190,10 +190,10 @@ if(is_logged_in()){
                         <!-- modal end  -->
                     </div>
                     <div class="cards box-shadow">
-                        <h5 class="cards-title">Guest approval</h5>
+                        <h5 class="cards-title nav-text">Guest approval</h5>
                         <!-- modal -->
 
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#approval">
+                        <button type="button" class="btn dropdown-btn nav-text" data-bs-toggle="modal" data-bs-target="#approval">
                             Read More
                         </button>
                         <div class="modal fade" id="approval" tabindex="-1" aria-labelledby="approval-Modal"
@@ -222,11 +222,11 @@ if(is_logged_in()){
 
 
                     <div class="cards box-shadow">
-                        <h5 class="cards-title">Guided Check-out</h5>
+                        <h5 class="cards-title nav-text">Guided Check-out</h5>
 
                         <!-- modal -->
 
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Guided">
+                        <button type="button" class="btn dropdown-btn nav-text" data-bs-toggle="modal" data-bs-target="#Guided">
                             Read More
                         </button>
                         <div class="modal fade" id="Guided" tabindex="-1" aria-labelledby="Guided-Modal"
@@ -234,7 +234,7 @@ if(is_logged_in()){
                             <div class="modal-dialog ">
                                 <div class="modal-content bgdcolor">
                                     <div class="modal-header">
-                                        <h1 class="modal-title fs-5" id="Guided-Modal">Guided Check-out
+                                        <h1 class="modal-title fs-5 " id="Guided-Modal">Guided Check-out
                                         </h1>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal"
                                             aria-label="Close"></button>
@@ -255,10 +255,10 @@ if(is_logged_in()){
 
 
                     <div class="cards box-shadow">
-                        <h5 class="cards-title">Professional housekeeping</h5>
+                        <h5 class="cards-title nav-text ">Professional housekeeping</h5>
                         <!-- modal -->
 
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        <button type="button" class="btn dropdown-btn nav-text nav-text" data-bs-toggle="modal"
                             data-bs-target="#housekeeping">
                             Read More
                         </button>
