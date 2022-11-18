@@ -83,7 +83,7 @@ if(is_logged_in()){
                         <h1>The Vacation Heaven</h1>
                     </div>
                     <h4 class="info-text ">
-                    An ultra-modern property Set in the Prime location of Anjuna - Ozran Beach Area of north Goa, this villa is a lavish resort that offers relaxation, privacy and direct access to your private pool & garden area.
+                    Our website is operates an online marketplace focused on short-term homestays and experiences
                     </h4>
                 </div>
 
