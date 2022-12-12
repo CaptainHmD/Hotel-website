@@ -2,7 +2,7 @@
 /* Database credentials.*/
 define('DB_SERVER', 'localhost');
 define('DB_USERNAME', 'hotel_management_user');
-define('DB_PASSWORD', 'Almowld@12');
+define('DB_PASSWORD', getenv("MYSQL_UNI_HOTEL_USER_PASS"));
 define('DB_NAME', 'hotel_management_system');
  
 /* Attempt to connect to MySQL database */
