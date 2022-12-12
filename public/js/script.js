@@ -271,10 +271,14 @@ const isValidEmail = () => {
     return regex.test(email.value)
 }
 
+try {
+    rePassword.addEventListener('keyup', confirmPassword)
+    password.addEventListener('keyup', confirmPassword)
+    email.addEventListener('keyup', testEmail)    
+} catch (error) {
+    
+}
 
-rePassword.addEventListener('keyup', confirmPassword)
-password.addEventListener('keyup', confirmPassword)
-email.addEventListener('keyup', testEmail)
 
 function testEmail() {
     if (email) {
