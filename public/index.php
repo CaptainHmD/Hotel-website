@@ -91,7 +91,7 @@ if(is_logged_in()){
             </div>
         </article>
 
-               <!-- <div class="article-section"></div> -->
+                <!-- <div class="article-section"></div> -->
         <!-- after main view will be our services then the text animation and img swapping -->
         <article class="article-section article-style" id="our-services-wrapper">
             <div id="our-services">
@@ -287,6 +287,51 @@ if(is_logged_in()){
                     </div>
                 </div>
             </div>
+        </article>
+
+        <article class="img-view article-style" id="img-tr">
+            <!-- <div class="article-section" id="img-text-section"> -->
+
+            <div id="text-section">
+                <h2 class="text-title text-size">Top Rating&nbsp;<h2 id="text-animation" class="text-title text-size"
+                        data-text="Single Room~"></h2>
+                </h2>
+            </div>
+            <div id="img-section">
+
+                <div id="carouselExampleDark" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="3000">
+                            <img src="../resources/hotel-images/single room4.jpg" class="d-block w-auto" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img src="../resources/hotel-images/single room.jpg" class="d-block w-auto" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img src="../resources/hotel-images/single room2.jpg" class="d-block w-auto" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <!-- </div> -->
         </article>
         <!-- <article></article>
         <article></article>
