@@ -183,7 +183,10 @@ nav>.nav-section {
   display: flex;
   gap: 1.5vw;
 }
-
+.link-hover:hover{
+  transition: all 0.3s ease;
+  color: var(--second-icon-background-color);
+}
 /* #logo-section>.dropdown {
   border-radius: 3rem;
   border: solid 3px var(--second-icon-background-color);

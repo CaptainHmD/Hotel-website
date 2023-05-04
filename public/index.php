@@ -63,12 +63,12 @@ if(is_logged_in()){
 
         <div class="nav-section" id="register-section">
             <h1>
-                <a href=<?php echo get_url("/register.php") ?> id="register-text" class="nav-text">Sign Up</a>
+                <a href=<?php echo get_url("/register.php") ?> id="register-text" ><h2 class="nav-text link-hover">Sign Up</h2></a>
             </h1>
         </div>
         <div class="nav-section" id="login-logout-section">
             <a href=<?php echo get_url("/login.php") ?>>
-                <h2 class="nav-text">Login</h2>
+                <h2 class="nav-text link-hover">Login</h2>
             </a>
         </div>
     </nav>
@@ -309,13 +309,13 @@ if(is_logged_in()){
                             aria-label="Slide 3"></button>
                     </div>
                     <div class="carousel-inner">
-                        <div class="carousel-item active" data-bs-interval="3000">
+                        <div class="carousel-item active" data-bs-interval="2500">
                             <img src="../resources/hotel-images/single room4.jpg" class="d-block w-auto" alt="...">
                         </div>
-                        <div class="carousel-item" data-bs-interval="3000">
+                        <div class="carousel-item" data-bs-interval="2500">
                             <img src="../resources/hotel-images/single room.jpg" class="d-block w-auto" alt="...">
                         </div>
-                        <div class="carousel-item" data-bs-interval="3000">
+                        <div class="carousel-item" data-bs-interval="2500">
                             <img src="../resources/hotel-images/single room2.jpg" class="d-block w-auto" alt="...">
                         </div>
                     </div>
