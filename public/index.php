@@ -83,7 +83,7 @@ if(is_logged_in()){
                         <h1>The Vacation Heaven</h1>
                     </div>
                     <h4 class="info-text ">
-                        There is no Vacation in UQU bi... &nbsp;&nbsp;&nbsp;D:
+                    Our website is operates an online marketplace focused on short-term homestays and experiences
                     </h4>
                 </div>
 
@@ -91,7 +91,7 @@ if(is_logged_in()){
             </div>
         </article>
 
-        <!-- <div class="article-section"></div> -->
+               <!-- <div class="article-section"></div> -->
         <!-- after main view will be our services then the text animation and img swapping -->
         <article class="article-section article-style" id="our-services-wrapper">
             <div id="our-services">
@@ -100,9 +100,9 @@ if(is_logged_in()){
                 </div>
                 <div class="services-wrapper">
                     <div class="cards box-shadow">
-                        <h5 class="cards-title">Professional photography</h5>
+                        <h5 class="cards-title nav-text">Professional photography</h5>
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        <button type="button" class="btn dropdown-btn nav-text" data-bs-toggle="modal"
                             data-bs-target="#exampleModal">
                             Read More
                         </button>
@@ -127,10 +127,10 @@ if(is_logged_in()){
                         </div>
                     </div>
                     <div class="cards box-shadow">
-                        <h5 class="cards-title"> price optimization</h5>
+                        <h5 class="cards-title nav-text"> price optimization</h5>
 
                         <!-- modal; -->
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#price">
+                        <button type="button" class="btn dropdown-btn nav-text" data-bs-toggle="modal" data-bs-target="#price">
                             Read More
                         </button>
                         <div class="modal fade" id="price" tabindex="-1" aria-labelledby="price -Modal"
@@ -161,10 +161,10 @@ if(is_logged_in()){
 
 
                     <div class="cards box-shadow">
-                        <h5 class="cards-title">Guest communication</h5>
+                        <h5 class="cards-title nav-text">Guest communication</h5>
 
                         <!-- modal -->
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Guest">
+                        <button type="button" class="btn dropdown-btn nav-text" data-bs-toggle="modal" data-bs-target="#Guest">
                             Read More
                         </button>
                         <div class="modal fade" id="Guest" tabindex="-1" aria-labelledby="Guest-Modal"
@@ -190,10 +190,10 @@ if(is_logged_in()){
                         <!-- modal end  -->
                     </div>
                     <div class="cards box-shadow">
-                        <h5 class="cards-title">Guest approval</h5>
+                        <h5 class="cards-title nav-text">Guest approval</h5>
                         <!-- modal -->
 
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#approval">
+                        <button type="button" class="btn dropdown-btn nav-text" data-bs-toggle="modal" data-bs-target="#approval">
                             Read More
                         </button>
                         <div class="modal fade" id="approval" tabindex="-1" aria-labelledby="approval-Modal"
@@ -222,11 +222,11 @@ if(is_logged_in()){
 
 
                     <div class="cards box-shadow">
-                        <h5 class="cards-title">Guided Check-out</h5>
+                        <h5 class="cards-title nav-text">Guided Check-out</h5>
 
                         <!-- modal -->
 
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Guided">
+                        <button type="button" class="btn dropdown-btn nav-text" data-bs-toggle="modal" data-bs-target="#Guided">
                             Read More
                         </button>
                         <div class="modal fade" id="Guided" tabindex="-1" aria-labelledby="Guided-Modal"
@@ -234,7 +234,7 @@ if(is_logged_in()){
                             <div class="modal-dialog ">
                                 <div class="modal-content bgdcolor">
                                     <div class="modal-header">
-                                        <h1 class="modal-title fs-5" id="Guided-Modal">Guided Check-out
+                                        <h1 class="modal-title fs-5 " id="Guided-Modal">Guided Check-out
                                         </h1>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal"
                                             aria-label="Close"></button>
@@ -255,10 +255,10 @@ if(is_logged_in()){
 
 
                     <div class="cards box-shadow">
-                        <h5 class="cards-title">Professional housekeeping</h5>
+                        <h5 class="cards-title nav-text ">Professional housekeeping</h5>
                         <!-- modal -->
 
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        <button type="button" class="btn dropdown-btn nav-text nav-text" data-bs-toggle="modal"
                             data-bs-target="#housekeeping">
                             Read More
                         </button>
@@ -287,51 +287,6 @@ if(is_logged_in()){
                     </div>
                 </div>
             </div>
-        </article>
-
-        <article class="img-view article-style" id="img-tr">
-            <!-- <div class="article-section" id="img-text-section"> -->
-
-            <div id="text-section">
-                <h2 class="text-title text-size">Top Rating&nbsp;<h2 id="text-animation" class="text-title text-size"
-                        data-text="Single Room~"></h2>
-                </h2>
-            </div>
-            <div id="img-section">
-
-                <div id="carouselExampleDark" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
-                            aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
-                            aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
-                            aria-label="Slide 3"></button>
-                    </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active" data-bs-interval="3000">
-                            <img src="../resources/hotel-images/single room4.jpg" class="d-block w-auto" alt="...">
-                        </div>
-                        <div class="carousel-item" data-bs-interval="3000">
-                            <img src="../resources/hotel-images/single room.jpg" class="d-block w-auto" alt="...">
-                        </div>
-                        <div class="carousel-item" data-bs-interval="3000">
-                            <img src="../resources/hotel-images/single room2.jpg" class="d-block w-auto" alt="...">
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-            </div>
-            <!-- </div> -->
         </article>
         <!-- <article></article>
         <article></article>
